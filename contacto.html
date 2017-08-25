@@ -1,106 +1,155 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title> Contacto | Virgen Morena</title>
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/principal.css"> 
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css"> 
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="icon" href="img/hojita.ico">
+
+
+
+
+
 </head>
+
 <body>
 
-<div class="container-fluid ">
-  <div class="row emergencia align-items-center">
-  	 <div class="col-lg-5 ">
-  	 	<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 / 0383 4746854 </p>
-  	 </div>	
+	<div class="container-fluid ">
+		<div class="row emergencia align-items-center">
+			<div class="col-lg-5 ">
+				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 / 0383 4746854 </p>
+			</div>
+		</div>
+	</div>
+
+
+	<nav class="navbar sticky-top navbar-expand-lg">
+		<button class="navbar-toggler navbar-toggler-right blanco" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<a class="navbar-brand" href="./main.html"><img src="img/logo.png" alt="" width="35px"></a>
+
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav mr-auto ml-auto text-center">
+
+				<li class="nav-item">
+					<a class="nav-link" href="./servicios.html">Servicios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./novedades.html">Novedades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./parque.html">El Parque</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./institucional.html">Institucional</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contacto.html">Contacto</a>
+				</li>
+
+			</ul>
+			<form class="form-inline">
+				<div class="d-flex flex-row justify-content-center">
+					<button class="btn btn-light" type="button">Ingresar</button>
+				</div>
+			</form>
+		</div>
+	</nav>
+
+<div class="container2">
+	<div class="row">
+		<div class="col-sm-8" style="background-color:transparent;">
+			<div class="form-area">
+				<form role="form" action="Aca va el enviar correo o dejar el msj en base de datos.Con php">
+					<br style="clear:both">
+					<h3 style="margin-bottom: 25px; text-align: left;"><strong>Formulario de Contacto</strong> </h3>
+					<p>Envíenos sus datos a través del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Nombre Completo</label>
+							<div class="controls">
+								<input type="text" minlength="10" class="form-control" id="name" placeholder="Nombre Completo">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Correo</label>
+							<div class="controls">
+								<input type="email" minlength="8" class="form-control" id="email" placeholder="Correo Electronico">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Nro Tel/Cel</label>
+							<div class="controls">
+								<input type="number" minlength="10" class="form-control" id="tel" placeholder="Numero Celular\Telefono">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Domicilio</label>
+							<div class="controls">
+								<input type="text" minlength="10" class="form-control" id="domicilio" placeholder="Calle,Barrio,Casa/Dpto">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">Asunto</label>
+						<div class="controls">
+							<label class="checkbox">
+        <input 
+          type="checkbox" 
+          name="some_field" 
+          data-validation-minchecked-minchecked="1" 
+          data-validation-minchecked-message="Seleccionar al menos 1 opcion" 
+        />Seguro Sepelio 
+      </label>
+							<label class="checkbox">
+        <input type="checkbox" name="some_field" /> Servicio Cremacion
+      </label>
+							<label class="checkbox">
+        <input type="checkbox" name="some_field" /> Servicio Parcela
+      </label>
+							<p class="help-block"></p>
+						</div>
+					</div>
+
+			
+			<div class="control-group">
+				<div class="form-group">
+					<textarea class="form-control" type="textarea" minlength="20" id="message" placeholder="Mensaje..." maxlength="140" rows="7"></textarea>
+					<span class="help-block"><p id="characterLeft" class="help-block ">Por favor no dude en comunicarse con nosotros</p></span>
+				</div>
+			</div>
+
+			<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar</button>
+
+	  	</form>
+
   </div>
 </div>
 
-
-<nav class="navbar sticky-top navbar-expand-lg">
-  <button class="navbar-toggler navbar-toggler-right blanco" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="./main.html"><img src="img/logo.png" alt="" width="35px"></a>
-  
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
-    <ul class="navbar-nav mr-auto ml-auto text-center">
-      
-	      <li class="nav-item">
-	        <a class="nav-link" href="./servicios.html">Servicios</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="./novedades.html">Novedades</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="./parque.html">El Parque</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="./institucional.html">Institucional</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="./contacto.html">Contacto</a>
-	      </li>
-	 
-    </ul>
-    <form class="form-inline">
-    	<div class="d-flex flex-row justify-content-center">
-    	<button class="btn btn-light" type="button">Ingresar</button>
-    	</div>
- 	</form>
-  </div>
-</nav>
-
-	<div class="container2">      
-  <div class="row">
-    <div class="col-sm-8" style="background-color:transparent;">
-        <div class="form-area">  
-        <form role="form" >
-        <br style="clear:both">
-                    <h3 style="margin-bottom: 25px; text-align: left;"><strong>Formulario de Contacto</strong> </h3>
-    				<p>Envíenos sus datos a través del formulario y nos contactaremos para brindarle la asistencia que necesite.</p> 
-    				<div class="form-group">
-    					<label class="control-label " for="name">Nombre Completo</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="Nombre Completo" required aria-required="true">
-					</div>
-					<div class="form-group">
-						<label class="control-label " for="email">Correo</label>
-						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-					</div>
-					<div class="form-group">
-						<label class="control-label " for="mobile">Nro Tel/Cel</label>
-						<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Numero Celular\Telefono" required>
-					</div>
-					<div class="form-group">
-    					<label class="control-label " for="domicilio">Domicilio</label>
-						<input type="text" class="form-control" id="domicilio" name="domicilio" placeholder="Calle,Barrio,Casa/Dpto" required aria-required="true">
-					</div>
-					<div class="form-group"> 
-
-						<label class="control-label " for="region_id">Asunto</label>
-						<select class="form-control" id="region_id" name="region"  >
-							<option value="serv1">Seguro Sepelio</option >
-							<option value="serv2">Crematorio</option>
-							<option value="serv3">Parcela</option>
-						</select>
-					</div>
-                    <div class="form-group">
-                    <textarea class="form-control" type="textarea" id="message" placeholder="Mensaje..." maxlength="140" rows="7"></textarea>
-                        <span class="help-block"><p id="characterLeft" class="help-block ">Por favor no dude en comunicarse con nosotros</p></span>                    
-                    </div>
-                   
-            
-    			    <button type="button btn-light" id="submit" name="submit" class="btn btn-primary pull-right">Enviar</button>
-
-        		</form>
-    		</div>
-
-      
-    </div>
     <div class="col-sm-4" style="background-color:white">
 
     <div class="container-fluid parque" style="background-color:white">
@@ -142,54 +191,55 @@
 
 
 </div>
-		
-		<div class="row">
-			
-		</div>
-	</div>
-</div>
 
-<div class="footer" >
-	<div class="container">
-		<div class="row ">
-			<div class="col-lg-4">
-				<h4>Contactanos</h4>
-				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 </p>
-				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> mailmail@mail.com</p>
-				<p><i class="fa fa-home" aria-hidden="true"></i> direccion de la oficina</p>
-			</div>
-			<div class="col-lg-4">
-				<h4>Acerca de Nosotros</h4>
-				<p>La empresa</p>
-				<p>Privacidad</p>
-				<p>Terminos y condiciones</p>
-			</div>
-			<div class="col-lg-4">
-				<h4>Sigamos juntos</h4>
-				<i class="social fa fa-facebook-official" aria-hidden="true"></i>
-				<i class="social fa fa-twitter" aria-hidden="true"></i>
-				<i class="social fa fa-google-plus" aria-hidden="true"></i>
-				<i class="social fa fa-whatsapp" aria-hidden="true"></i>
-				<i class="social fa fa-youtube" aria-hidden="true"></i>
+	<div class="footer">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-4">
+					<h4>Contactanos</h4>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 </p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> mailmail@mail.com</p>
+					<p><i class="fa fa-home" aria-hidden="true"></i> direccion de la oficina</p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Acerca de Nosotros</h4>
+					<p>La empresa</p>
+					<p>Privacidad</p>
+					<p>Terminos y condiciones</p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Sigamos juntos</h4>
+					<i class="social fa fa-facebook-official" aria-hidden="true"></i>
+					<i class="social fa fa-twitter" aria-hidden="true"></i>
+					<i class="social fa fa-google-plus" aria-hidden="true"></i>
+					<i class="social fa fa-whatsapp" aria-hidden="true"></i>
+					<i class="social fa fa-youtube" aria-hidden="true"></i>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container separador">
-		<hr>
-	</div>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+		<div class="container separador">
+			<hr>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 	</div>
 
-<div class="container-fluid autor">
-	<p>Desarrollado por Acosta Argañaraz & Blanco</p>
-</div>
+	<div class="container-fluid autor">
+		<p>Desarrollado por Acosta Argañaraz & Blanco</p>
+	</div>
 
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
- <script src="js/wow.min.js"></script>
-<script>
+	<script src="js/wow.min.js"></script>
+	<script>
 	new WOW().init();
+	</script>
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script>
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+	
 </script>
+
 </body>
+
 </html>
