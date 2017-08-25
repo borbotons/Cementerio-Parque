@@ -2,7 +2,6 @@ body
 {
 	margin: 0;
 	padding: 0;
-	width: 1335px;
 }
 
 div.emergencia
@@ -35,6 +34,38 @@ nav
 	background-color: #73b41d !important;
 }
 
+.header
+{
+	height: 600px;
+	width: 100%;
+	background-image: url(../img/c.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	padding-top: 50px;
+}
+
+.header .izquierda
+{
+	padding-left: 100px;
+}
+
+.header .derecha 
+{
+	padding-top: 150px;
+	padding-left: 300px;
+}
+
+.header h1, .header p 
+{
+	margin-top: 50px;
+}
+
+.header img
+{
+	width: 450px;
+}
 
 div.noticias
 {
@@ -109,7 +140,33 @@ div.servicios
 div.parque
 {
 	min-height: 500px;
-	background: white;
+	background: #73b41d;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.parque h1
+{
+	font-family: 'Lato Hairline';
+	font-size: 60px;
+	color: white;
+}
+
+.contador
+{
+	font-family: 'Lato Hairline';
+	font-size: 160px;
+	color: white;
+}
+
+.fila
+{
+	
+}
+
+.detalle
+{
+	padding-top: 60px;
 }
 
 .footer
