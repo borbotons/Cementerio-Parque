@@ -1,0 +1,155 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+div.emergencia
+{
+	height: 50px;
+	background: white;
+	padding-top: 15px;
+}
+/*
+nav
+{
+	background-color: #76b71f;
+}*/
+
+.navbar
+{
+	background-color: #76b71f;
+}
+
+.nav-link
+{
+	color: white;
+	opacity: 0.7;
+}
+
+.nav-link:hover
+{
+	color: black;
+	opacity: 1;
+	background-color: #73b41d !important;
+}
+
+div.parque
+{
+	min-height: 500px;
+	background: #73b41d;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.parque h1
+{
+	font-family: 'Lato Hairline';
+	font-size: 60px;
+	color: white;
+}
+
+.contador
+{
+	font-family: 'Lato Hairline';
+	font-size: 160px;
+	color: white;
+}
+
+.detalle
+{
+	padding-top: 60px;
+}
+
+.acerca
+{
+	height: 3000px;
+}
+
+.info
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+
+.info-logo img
+{
+	width: 60%;
+	height: 60%;
+}
+
+.info-mapa img
+{
+	width: 75%;
+	height: 75%;
+}
+
+.contador-verde
+{
+	font-family: 'Lato Hairline';
+	font-size: 60px;
+	color: #73b41d;
+}
+
+.texto1
+{
+	padding-top: 30px;
+	text-align: center;
+}
+
+.caracteristicas
+{
+	padding-top: 20px;
+}
+
+.caracteristicas-2
+{
+	padding-top: 25px;
+}
+
+.pad-left
+{
+	padding-left: 20px;
+}
+
+.pad-bot
+{
+	padding-left: 40px;
+}
+
+.footer
+{
+	height: 300px;
+	background: #2D2D37;
+	color: #ccc;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.footer .social
+{
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.separador
+{
+	width: 60%;
+	background-color: #ccc;
+}
+
+div.autor
+{
+	height: 50px;
+	background: #25252d;
+	color: white;
+	font-size: 15px;
+	padding-top: 15px;
+	font-family: 'Lato Hairline';
+}
