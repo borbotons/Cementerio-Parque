@@ -67,7 +67,7 @@
 	<div class="row">
 		<div class="col-sm-8" style="background-color:transparent;">
 			<div class="form-area">
-				<form role="form" action="Aca va el enviar correo o dejar el msj en base de datos.Con php">
+				<form role="form"  name="contacto" id="contacto" action="controllers/envio.php" method="post" >
 					<br style="clear:both">
 					<h3 style="margin-bottom: 25px; text-align: left;"><strong>Formulario de Contacto</strong> </h3>
 					<p>Envíenos sus datos a través del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
@@ -76,7 +76,7 @@
 						<div class="control-group">
 							<label class="control-label">Nombre Completo</label>
 							<div class="controls">
-								<input type="text" minlength="10" class="form-control" id="name" placeholder="Nombre Completo">
+								<input type="text" minlength="10" class="form-control" id="name" name="name" placeholder="Nombre Completo">
 								<p class="help-block"></p>
 							</div>
 						</div>
@@ -87,7 +87,7 @@
 						<div class="control-group">
 							<label class="control-label">Correo</label>
 							<div class="controls">
-								<input type="email" minlength="8" class="form-control" id="email" placeholder="Correo Electronico">
+								<input type="email" minlength="8" class="form-control" id="email" name="email" placeholder="Correo Electronico" ><span id="email2"></span>
 								<p class="help-block"></p>
 							</div>
 						</div>
@@ -98,7 +98,7 @@
 						<div class="control-group">
 							<label class="control-label">Nro Tel/Cel</label>
 							<div class="controls">
-								<input type="number" minlength="10" class="form-control" id="tel" placeholder="Numero Celular\Telefono">
+								<input type="number" minlength="10" class="form-control" id="tel" name="tel" placeholder="Numero Celular\Telefono">
 								<p class="help-block"></p>
 							</div>
 						</div>
@@ -108,7 +108,7 @@
 						<div class="control-group">
 							<label class="control-label">Domicilio</label>
 							<div class="controls">
-								<input type="text" minlength="10" class="form-control" id="domicilio" placeholder="Calle,Barrio,Casa/Dpto">
+								<input type="text" minlength="10" class="form-control" id="domicilio" name="domicilio" placeholder="Calle,Barrio,Casa/Dpto">
 								<p class="help-block"></p>
 							</div>
 						</div>
@@ -121,6 +121,7 @@
         <input 
           type="checkbox" 
           name="some_field" 
+					id="some_field"
           data-validation-minchecked-minchecked="1" 
           data-validation-minchecked-message="Seleccionar al menos 1 opcion" 
         />Seguro Sepelio 
@@ -138,7 +139,7 @@
 			
 			<div class="control-group">
 				<div class="form-group">
-					<textarea class="form-control" type="textarea" minlength="20" id="message" placeholder="Mensaje..." maxlength="140" rows="7"></textarea>
+					<textarea class="form-control" type="textarea" minlength="20" id="message" name="message" placeholder="Mensaje..." maxlength="140" rows="7" style="resize:none"></textarea>
 					<span class="help-block"><p id="characterLeft" class="help-block ">Por favor no dude en comunicarse con nosotros</p></span>
 				</div>
 			</div>
