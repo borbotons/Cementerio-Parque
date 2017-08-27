@@ -18,7 +18,7 @@ nav
 
 .navbar
 {
-	background-color: #76b71f;
+	background-color: #71c837;
 }
 
 .nav-link
@@ -99,7 +99,7 @@ div.noticias
 .frase1
 {
 	min-height: 200px;
-	background-color: #73b41d;
+	background-color: #50b204;
 	text-align: center;
 	padding-top: 50px;  
 	color: white;
@@ -140,7 +140,7 @@ div.servicios
 div.parque
 {
 	min-height: 500px;
-	background: #73b41d;
+	background: #50b204;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }

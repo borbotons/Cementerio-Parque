@@ -7,14 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" type="text/css" href="css/contacto.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="icon" href="img/hojita.ico">
-
-
-
-
-
 </head>
 
 <body>
@@ -33,7 +28,7 @@
 			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-		<a class="navbar-brand" href="./main.html"><img src="img/logo.png" alt="" width="35px"></a>
+		<a class="navbar-brand" href="./main.html"><img src="img/logo blanco.png" alt="" width="40px"></a>
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 			<ul class="navbar-nav mr-auto ml-auto text-center">
@@ -62,7 +57,94 @@
 			</form>
 		</div>
 	</nav>
+	
+	<div class="container-fluid fondo-verde">
+		<div class="container fondo-fomulario">
+			<div class="row justify-content-center cabeza wow fadeInUp " data-wow-delay="0.2s">
+				<img src="img/titulo.png" alt="">
+			</div>
+			<hr>
+			<div class="row justify-content-center titular wow fadeInUp " data-wow-delay="0.3s">
+				<h2>&iquest;Desea comunicarse con  nosotros?</h2>
+			</div>
+			<div class="row justify-content-center frase wow fadeInUp " data-wow-delay="0.5s">
+				<p>Envíenos sus datos a través del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
+			</div>
+			<div class="row form-style justify-content-center">
+				<div class="col-lg-10 col-md-8 ">
+					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
 
+						<div class="form-group row">							
+								<label class="col-2 col-form-label">Nombre</label>					
+								<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						</div>
+
+						<div class="form-group row">							
+								<label class="col-2 col-form-label">Apellido</label>					
+								<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						</div>
+
+						<div class="form-group row">
+								<label class="col-2 col-form-label">Correo</label>
+								
+								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
+						</div>
+
+						<div class="form-group row">
+									<label class="col-2 col-form-label">Telefono</label>
+								
+									<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular\Telefono">
+						</div>
+
+						<div class="form-group row">
+								<label class="col-2 col-form-label">Domicilio</label>
+							
+								<input type="text" minlength="10" class="form-control col-10" id="domicilio" required name="domicilio" placeholder="Calle,Barrio,Casa/Dpto">
+						</div>
+
+						<div class="control-group row">
+							<label class="col-2 col-form-label">Asunto</label>
+								<div class="col-lg-10">
+									<label class="checkbox col-5">
+								        <input type="checkbox" name="some_field" id="some_field"
+								          data-validation-minchecked-minchecked="1" 
+								          data-validation-minchecked-message="Seleccionar al menos 1 opcion"/>
+								    Seguro Sepelio 
+							        </label>
+									<label class="checkbox col-5">
+								        <input type="checkbox" name="some_field" /> Servicio Cremacion
+								    </label>
+									<label class="checkbox col-5">
+								        <input type="checkbox" name="some_field" /> Servicio Parcela
+								    </label>
+								    <label class="checkbox col-5">
+								        <input type="checkbox" name="some_field" /> Servicio Traslado
+								    </label>
+								    <label class="checkbox col-5">
+								        <input type="checkbox" name="some_field" /> Servicio Inhumacion
+								    </label>
+								    <label class="checkbox col-5">
+								        <input type="checkbox" name="some_field" /> Otros
+								    </label>
+							    </div>
+						
+						</div>
+
+						<div class="control-group">
+							<div class="form-group">
+								<textarea class="form-control" type="textarea" minlength="20" id="message" name="message" required placeholder="Mensaje..." maxlength="140" rows="7" style="resize:none"></textarea>
+								<span class="help-block"><p id="characterLeft" class="help-block ">Por favor no dude en comunicarse con nosotros</p></span>
+							</div>
+						</div>
+
+						<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--
 <div class="container2">
 	<div class="row">
 		<div class="col-sm-8" style="background-color:transparent;">
@@ -118,20 +200,20 @@
 						<label class="control-label">Asunto</label>
 						<div class="controls">
 							<label class="checkbox">
-        <input 
-          type="checkbox" 
-          name="some_field" 
-					id="some_field"
-          data-validation-minchecked-minchecked="1" 
-          data-validation-minchecked-message="Seleccionar al menos 1 opcion" 
-        />Seguro Sepelio 
-      </label>
+					        <input 
+					          type="checkbox" 
+					          name="some_field" 
+										id="some_field"
+					          data-validation-minchecked-minchecked="1" 
+					          data-validation-minchecked-message="Seleccionar al menos 1 opcion" 
+					        />Seguro Sepelio 
+					        </label>
 							<label class="checkbox">
-        <input type="checkbox" name="some_field" /> Servicio Cremacion
-      </label>
+						        <input type="checkbox" name="some_field" /> Servicio Cremacion
+						    </label>
 							<label class="checkbox">
-        <input type="checkbox" name="some_field" /> Servicio Parcela
-      </label>
+						        <input type="checkbox" name="some_field" /> Servicio Parcela
+						    </label>
 							<p class="help-block"></p>
 						</div>
 					</div>
@@ -151,47 +233,8 @@
   </div>
 </div>
 
-    <div class="col-sm-4" style="background-color:white">
-
-    <div class="container-fluid parque" style="background-color:white">
-	<br> <h4>El parque</h4>
-	<p><strong>Horarios:</strong>Lunes a Viernes de 08:30 a 13:30 y de 14:30 a 18:15
-		<br><strong>Dirección:</strong>Plaza Alameda 
-		<br><strong>Tel / Celular</strong>0800-777-2718 / 03835-404743
-		<br><strong>Emergencias las 24 hs.</strong>­ 03835-492715</p>
-	<div class="row justify-content-left">
-		<div class="col-lg-5">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d8365.839544879615!2d-65.79742330892174!3d-28.42077753440111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-28.416129599999998!2d-65.7882059!5e1!3m2!1ses!2sar!4v1503585926646" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-		<div class="col-lg-3">
-			<p></p>
-		</div>
-	</div>
-</div>
-
-
-
-	<p  class="col-sm-4" align="align-items-center" style="color:white "> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. </p>
-
-        
-    </div>
   </div>
-</div>
-
-	
-		
-
-		
-		
-			
-		
-	</div>
-	</div>
-	</div>
-</div>
-
-
-</div>
+</div>-->
 
 	<div class="footer">
 		<div class="container">
@@ -233,13 +276,12 @@
 
 	<script src="js/wow.min.js"></script>
 	<script>
-	new WOW().init();
+		new WOW().init();
 	</script>
 	<script src="js/jqBootstrapValidation.js"></script>
 	<script>
-  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-	
-</script>
+	 	$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+	</script>
 
 </body>
 
