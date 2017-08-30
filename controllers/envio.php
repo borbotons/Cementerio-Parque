@@ -27,13 +27,17 @@
             $asunto = 'Parque Virgen Morena-Clientes';
             //Mensajes de Exito o Fallo
             if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
-                $mensajeExito = '<div class="alert alert-success" role="alert">Mensaje enviado.A la brevedad nos comunicaremos contigo.Gracias.</div>';  
+                
+               header( "refresh:0;../contacto.html" );
+               echo "<script>alert('Mensaje enviado, ¡Gracias!.');</script>";
+               die();
+              
+               $mensajeExito = '<div class="alert alert-success" role="alert">Mensaje enviado.A la brevedad nos comunicaremos contigo.Gracias.</div>';  
                 //Ver para no salir de la pagina y seguir en la misma ademas creo q tendre q validar aca tambien, porque sino no vale.
                 //el jquery q mande.
                 //Tomar bien la opcion del asun.(el de textarea) Ver el tema si selecciono if 1=Sepelio 2=Crematorio 3=Parcela
             } else {
-
-                $error = '<div class="alert alert-danger" role="alert"><p><strong>Mensaje sin enviar.Prueba nuevamente,disculpa las molestias.</div>';  
+                echo "<script>alert('Error no se envio el mensaje,por favor intente mas tarde ¡Gracias!.');</script>";
             } 
           
     
