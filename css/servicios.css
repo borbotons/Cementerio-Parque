@@ -31,7 +31,7 @@ div.emergencia
 
 .servicios
 {
-	padding: 50px 0 80px;
+	padding: 10px 0 80px;
 	text-align: center;
 	background-color: #50b204;
 }
@@ -75,6 +75,19 @@ div.emergencia
 {
 	color: #737373;
 }
+
+.back-text
+{
+	display: inline-block;
+	font-size: 125px;
+	line-height: 125px;
+	font-weight: 900px;
+	left: -50px;
+	bottom: -30px;
+	opacity: 0.1;
+	color: white;
+}
+
 
 
 .footer

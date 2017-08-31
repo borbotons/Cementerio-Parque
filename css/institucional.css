@@ -78,6 +78,33 @@ div.parque
 	height: 80%;
 }
 
+.logo
+{
+	opacity: 0.2;
+}
+
+.oficina
+{
+	min-height: 500px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.oficina h1
+{
+	color: #50b204;
+}
+
+.oficina p
+{
+	font-size: 18px;
+	line-height: 25px;
+
+	color: black;
+}
+
 .footer
 {
 	height: 300px;
