@@ -5,9 +5,28 @@
             //Paso de datos mediante la url.
             $nombre = $_POST['name'];
             $mail = $_POST['email'];
-            $domicilio = $_POST['domicilio'];
+            $domicilio = $_POST['autocomplete'];
             $telefono = $_POST['tel'];
-            $asun = $_POST['some_field'];
+            $asuna = $_POST['some_field'];
+
+            $num = count($asuna);
+
+            echo 'Checkbox seleccionado'.'su valor es:'.$num;
+
+
+
+          /*  echo $asuna[];
+            if($asuna.[$n]==0 )
+            {
+                $asun='Seguro Sepelio';
+            
+            }*/
+
+            //if($asun)
+
+
+
+/*
             $mensajeC = $_POST['message'];
             //Cabecera del correo
             $header = 'From: ' . $mail . " \r\n";
@@ -40,5 +59,5 @@
                 echo "<script>alert('Error no se envio el mensaje,por favor intente mas tarde ¡Gracias!.');</script>";
             } 
           
-    
+  */  
 ?>
