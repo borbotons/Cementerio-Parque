@@ -2,9 +2,6 @@
 <html>
 
 <head>
-
-
-	<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
 	<title> Contacto | Virgen Morena</title>
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -12,11 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="img/hojita.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 
-<body onload="initialize()">
+<body>
 
 	<div class="container-fluid ">
 		<div class="row emergencia align-items-center">
@@ -32,7 +29,7 @@
 			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-		<a class="navbar-brand" href="./main.html"><img src="img/logo blanco.png" alt="" width="40px"></a>
+		<a class="navbar-brand" href="./main.html"><img src="img/titulo3.png" alt="" width="130px"></a>
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 			<ul class="navbar-nav mr-auto ml-auto text-center">
@@ -72,7 +69,7 @@
 				<h2>&iquest;Desea comunicarse con  nosotros?</h2>
 			</div>
 			<div class="row justify-content-center frase wow fadeInUp " data-wow-delay="0.5s">
-				<p>Env&iacute;enos sus datos a trav&eacute;s del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
+				<p>Envíenos sus datos a través del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
 			</div>
 			<div class="row form-style justify-content-center">
 				<div class="col-lg-10 col-md-8 ">
@@ -80,66 +77,60 @@
 
 						<div class="form-group row">							
 								<label class="col-2 col-form-label">Nombre</label>					
-								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+								<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
 						</div>
 
+						<div class="form-group row">							
+								<label class="col-2 col-form-label">Apellido</label>					
+								<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						</div>
 
-						
 						<div class="form-group row">
-							
 								<label class="col-2 col-form-label">Correo</label>
+								
 								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
-								<p class="help-block"></p>
 						</div>
-						
+
 						<div class="form-group row">
 									<label class="col-2 col-form-label">Telefono</label>
 								
-									<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
+									<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular\Telefono">
 						</div>
 
-						
-						
-						
-						<div class="form-group row">	
+						<div class="form-group row">
 								<label class="col-2 col-form-label">Domicilio</label>
-								
 							
-								<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
-								
-						</div>	
-						
-					<div class="control-group row">
+								<input type="text" minlength="10" class="form-control col-10" id="domicilio" required name="domicilio" placeholder="Calle,Barrio,Casa/Dpto">
+						</div>
+
+						<div class="control-group row">
 							<label class="col-2 col-form-label">Asunto</label>
 								<div class="col-lg-10">
 									<label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" checked="checked" value="Servicio Sepelio"
-								          data-validation-minchecked-minchecked="1"
-										  data-validation-maxchecked-maxchecked="1" 
-								          data-validation-minchecked-message="Seleccionar 1 opcion"/>
+								        <input type="checkbox" name="some_field" id="some_field"
+								          data-validation-minchecked-minchecked="1" 
+								          data-validation-minchecked-message="Seleccionar al menos 1 opcion"/>
 								    Seguro Sepelio 
 							        </label>
 									<label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Cremacion" /> Servicio Cremacion
+								        <input type="checkbox" name="some_field" /> Servicio Cremacion
 								    </label>
 									<label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Parcela"/> Servicio Parcela
+								        <input type="checkbox" name="some_field" /> Servicio Parcela
 								    </label>
 								    <label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Traslado"/> Servicio Traslado
+								        <input type="checkbox" name="some_field" /> Servicio Traslado
 								    </label>
 								    <label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Inhumacion"/> Servicio Inhumacion
+								        <input type="checkbox" name="some_field" /> Servicio Inhumacion
 								    </label>
 								    <label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Otros"/> Otros
+								        <input type="checkbox" name="some_field" /> Otros
 								    </label>
 							    </div>
 						
 						</div>
-					<?php echo some_field.value[0] ?>
 
-			
 						<div class="control-group">
 							<div class="form-group">
 								<textarea class="form-control" type="textarea" minlength="20" id="message" name="message" required placeholder="Mensaje..." maxlength="140" rows="7" style="resize:none"></textarea>
@@ -152,9 +143,100 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
+<!--
+<div class="container2">
+	<div class="row">
+		<div class="col-sm-8" style="background-color:transparent;">
+			<div class="form-area">
+				<form role="form"  name="contacto" id="contacto" action="controllers/envio.php" method="post" >
+					<br style="clear:both">
+					<h3 style="margin-bottom: 25px; text-align: left;"><strong>Formulario de Contacto</strong> </h3>
+					<p>Envíenos sus datos a través del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
 
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Nombre Completo</label>
+							<div class="controls">
+								<input type="text" minlength="10" class="form-control" required id="name" name="name" placeholder="Nombre Completo">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Correo</label>
+							<div class="controls">
+								<input type="email" minlength="8" class="form-control" id="email" required name="email" placeholder="Correo Electronico" ><span id="email2"></span>
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Nro Tel/Cel</label>
+							<div class="controls">
+								<input type="number" minlength="10" class="form-control" id="tel"  required name="tel" placeholder="Numero Celular\Telefono">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group ">
+						<div class="control-group">
+							<label class="control-label">Domicilio</label>
+							<div class="controls">
+								<input type="text" minlength="10" class="form-control" id="domicilio" required name="domicilio" placeholder="Calle,Barrio,Casa/Dpto">
+								<p class="help-block"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label">Asunto</label>
+						<div class="controls">
+							<label class="checkbox">
+					        <input 
+					          type="checkbox" 
+					          name="some_field" 
+										id="some_field"
+					          data-validation-minchecked-minchecked="1" 
+					          data-validation-minchecked-message="Seleccionar al menos 1 opcion" 
+					        />Seguro Sepelio 
+					        </label>
+							<label class="checkbox">
+						        <input type="checkbox" name="some_field" /> Servicio Cremacion
+						    </label>
+							<label class="checkbox">
+						        <input type="checkbox" name="some_field" /> Servicio Parcela
+						    </label>
+							<p class="help-block"></p>
+						</div>
+					</div>
+
+			
+			<div class="control-group">
+				<div class="form-group">
+					<textarea class="form-control" type="textarea" minlength="20" id="message" name="message" required placeholder="Mensaje..." maxlength="140" rows="7" style="resize:none"></textarea>
+					<span class="help-block"><p id="characterLeft" class="help-block ">Por favor no dude en comunicarse con nosotros</p></span>
+				</div>
+			</div>
+
+			<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar</button>
+
+	  	</form>
+
+  </div>
+</div>
+
+  </div>
+</div>-->
 
 	<div class="footer">
 		<div class="container">
@@ -193,8 +275,7 @@
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/localizacion.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();

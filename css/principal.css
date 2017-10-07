@@ -2,6 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato';
 }
 
 div.emergencia
@@ -332,6 +333,34 @@ div.servicios
 	color: white;
 }
 
+.clientes
+{
+	height: 400px;
+	width: 100%;
+	background: url("../img/baner2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+.e1
+{
+	padding-top: 25px;
+}
+
+.clientes h3
+{
+	color: white;
+	font-family: 'Lato Hairline';
+	font-size: 50px;
+}
+
+.e2
+{
+	padding-top: 60px;
+	margin: ;
+}
+
 div.parque
 {
 	min-height: 500px;
@@ -354,9 +383,9 @@ div.parque
 	color: white;
 }
 
-.fila
+.derecha
 {
-	
+	text-align: right;
 }
 
 .detalle

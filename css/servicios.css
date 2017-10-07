@@ -70,6 +70,16 @@ div.emergencia
 	padding: 5px;
 }
 
+.package-normal
+{
+	min-height: 650px;
+}
+
+.package-g
+{
+	max-width: 400px;
+}
+
 .package h4,
 .package h1,
 .package b 
@@ -89,8 +99,7 @@ div.emergencia
 	font-size: 125px;
 	line-height: 125px;
 	font-weight: 900px;
-	left: -50px;
-	bottom: -30px;
+
 	opacity: 0.1;
 	color: white;
 }
