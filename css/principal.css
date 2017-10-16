@@ -2,21 +2,80 @@ body
 {
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato';
 }
 
 div.emergencia
 {
-	height: 50px;
 	background: white;
-	padding-top: 15px;
-}
-/*
-nav
-{
-	background-color: #76b71f;
-}*/
+	padding-top: 10px;
+	padding-bottom: 10px;
 
-.navbar
+}
+
+.top
+{
+	margin-top: 10px;
+}
+
+.top2
+{
+	margin-top: 5px;
+}
+
+.navbar, .dropdown-menu{
+background:#09ba32;
+border: none;
+
+}
+
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+  border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  border-bottom: 3px solid transparent;
+  background: rgba(154, 154, 154, 0.27);
+}
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+ color: #fff;
+}
+.dropdown-menu{
+      -webkit-box-shadow: none;
+    box-shadow:none;
+}
+
+.nav li:hover:nth-child(8n+1), .nav li.active:nth-child(8n+1){
+  border-bottom: #b6f423 4px solid;
+}
+.nav li:hover:nth-child(8n+2), .nav li.active:nth-child(8n+2){
+  border-bottom: #82e2ea 4px solid;
+}
+.nav li:hover:nth-child(8n+3), .nav li.active:nth-child(8n+3){
+  border-bottom: #f8b42c 4px solid;
+}
+.nav li:hover:nth-child(8n+4), .nav li.active:nth-child(8n+4){
+  border-bottom: #fd594a 4px solid;
+}
+.nav li:hover:nth-child(8n+5), .nav li.active:nth-child(8n+5){
+  border-bottom: #e8479d 4px solid;
+}
+.nav li:hover:nth-child(8n+6), .nav li.active:nth-child(8n+6){
+  border-bottom: #a12eeb 4px solid;
+}
+.nav li:hover:nth-child(8n+7), .nav li.active:nth-child(8n+7){
+  border-bottom: #4785d9 4px solid;
+}
+.nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
+  border-bottom: #2aed9a 4px solid;
+}
+
+.navbar-toggle .icon-bar{
+    color: #fff;
+    background: #000000;
+}
+
+
+/*.navbar
 {
 	background-color: #71c837;
 }
@@ -39,16 +98,19 @@ nav
 	color: black;
 	opacity: 1;
 	background-color: white !important;
-}
+}*/ 
 
 .header
 {
 	height: 600px;
-	width: 100%;
+
 	background-image: url(../img/c.jpg);
-	background-position: center center;
+	/*background-position: center center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+	background-size: 100% 100%;
+    background-attachment: fixed;
+
 	color: white;
 	padding-top: 50px;
 }
@@ -332,6 +394,34 @@ div.servicios
 	color: white;
 }
 
+.clientes
+{
+	height: 400px;
+	/*width: 100%;*/
+	background: url("../img/baner2.jpg");
+	background-size: 100% 100%;
+    background-attachment: fixed;
+	
+}
+
+.e1
+{
+	padding-top: 25px;
+}
+
+.clientes h3
+{
+	color: white;
+	font-family: 'Lato Hairline';
+	font-size: 50px;
+}
+
+.e2
+{
+	padding-top: 60px;
+	margin: ;
+}
+
 div.parque
 {
 	min-height: 500px;
@@ -354,9 +444,9 @@ div.parque
 	color: white;
 }
 
-.fila
+.derecha
 {
-	
+	text-align: right;
 }
 
 .detalle

@@ -2,6 +2,8 @@ body
 {
 	margin: 0;
 	padding: 0;
+
+	font-family: 'Open Sans', sans-serif;
 }
 
 div.emergencia
@@ -36,6 +38,91 @@ div.emergencia
 	background-color: white !important;
 }
 
+div.cabeza
+{
+	width: 100%;
+	height: 250px;
+	padding: 20px 0;
+
+	background: #50b204;
+}
+
+.cabeza-texto
+{
+	color: white;
+	text-align: left;
+}
+
+.cabeza-texto h1
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 80px; 
+	line-height: 100px;
+}
+
+.cabeza-texto p
+{
+	font-size: 20px;
+}
+
+.estrutura
+{
+	min-height: 400px;
+	padding-bottom: 30px;
+}
+
+.estructura-info
+{
+	padding-top: 30px;
+
+}
+
+.estructura-info h1
+{
+	color: #50b204;
+}
+
+.caja
+{
+	height: 350px;
+	padding: 30px;
+	border: 2px solid #50b204;
+	border-top: 10px solid #50b204;
+	background-color: white;
+
+	border-radius: 0px;
+	margin-top: 30px;
+		/*box-shadow: 0 14px 28px rgba(0,0,0,0.25);*/
+
+	/*text-align: center;
+	color: #50b204;*/
+}
+
+.info h3
+{
+	font-family: 'Lato';
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.caja h3
+{
+	font-size: 30px;
+	line-height: 50px;
+}
+
+.caja i 
+{
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.caja p 
+{
+	text-align: justify;
+}
+
+/*
 div.parque
 {
 	min-height: 500px;
@@ -89,15 +176,18 @@ div.parque
 .logo
 {
 	opacity: 0.2;
+}*/
+
+.datos-fonto
+{
+	background: #ecf0f1;
 }
 
 .oficina
 {
 	min-height: 500px;
-	padding-top: 50px;
+	padding-top: 10px;
 	padding-bottom: 50px;
-
-	font-family: 'Open Sans', sans-serif;
 }
 
 .oficina h1
@@ -111,6 +201,23 @@ div.parque
 	line-height: 25px;
 
 	color: black;
+}
+
+.datos
+{
+	padding-top: 20px;
+}
+
+.datos h1
+{
+	font-size: 30px;
+	line-height: 50px;
+}
+
+.datos h2
+{
+	font-size: 30px;
+	line-height: 50px;
 }
 
 .footer

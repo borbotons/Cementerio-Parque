@@ -13,7 +13,7 @@ div.emergencia
 
 .navbar
 {
-	background-color: #71c837;
+	background-color: #6bc452; /*#71c837*/
 }
 
 .nav-link
@@ -34,6 +34,33 @@ div.emergencia
 	color: black;
 	opacity: 1;
 	background-color: white !important;
+}
+
+div.cabeza
+{
+	width: 100%;
+	height: 250px;
+	padding: 20px 0;
+
+	background: #50b204; /*#40855F*/
+}
+
+.cabeza-texto
+{
+	color: white;
+	text-align: left;
+}
+
+.cabeza-texto h1
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 80px; 
+	line-height: 100px;
+}
+
+.cabeza-texto p
+{
+	font-size: 20px;
 }
 
 div.parque
@@ -64,19 +91,54 @@ div.parque
 	padding-right: 30px;
 }
 
+.info-cumplimos
+{
+	background: #50b204;
+	padding-bottom: 20px;
+}
+
+.info-cumplimos p
+{
+	font-size: 17px;
+}
+
+.cumplimos
+{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+
+.numero
+{
+	text-align: right;
+}
+
 .detalle
 {
-	padding-top: 60px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+.detalle-galeria
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .acerca
 {
-	height: 3000px;
+	min-height: 300px;
 }
 
 .info
 {
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 50px;
 	background-color: white;
 }
@@ -87,7 +149,10 @@ div.parque
 	height: 40%;
 }
 
-
+.info-mapa
+{
+	padding-top: 30px;
+}
 
 .info-mapa img
 {
@@ -98,14 +163,14 @@ div.parque
 .contador-verde
 {
 	font-family: 'Lato Hairline';
-	font-size: 60px;
+	font-size: 50px;
 	color: #73b41d;
 }
 
 .texto1
 {
 	padding-top: 30px;
-	text-align: center;
+	text-align: left;
 }
 
 .caracteristicas
@@ -118,14 +183,15 @@ div.parque
 	padding-top: 25px;
 }
 
-.pad-left
+.estructura-info h1
 {
-	padding-left: 40px;
+	color: #50b204;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.pad-bot
+.estructura-info
 {
-	padding-left: 40px;
+	padding-top: 30px;
 }
 
 .footer
