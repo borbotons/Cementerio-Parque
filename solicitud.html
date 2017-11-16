@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+	<title> Contacto | Virgen Morena</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/contacto.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="img/hojita.ico">
+</head>
+
+<body onload="initialize()">
+
+	<div class="container-fluid ">
+		<div class="row emergencia align-items-center">
+			<div class="col-lg-5 ">
+				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 / 0383 4746854 </p>
+			</div>
+		</div>
+	</div>
+
+
+	<nav class="navbar sticky-top navbar-expand-lg">
+		<button class="navbar-toggler navbar-toggler-right blanco" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<a class="navbar-brand" href="./main.html"><img src="img/logo blanco.png" alt="" width="40px"></a>
+
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav mr-auto ml-auto text-center">
+
+				<li class="nav-item">
+					<a class="nav-link" href="./servicios.html">Servicios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./novedades.html">Novedades</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./parque.html">El Parque</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./institucional.html">Institucional</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contacto.html">Contacto</a>
+				</li>
+
+			</ul>
+			<!-- <form class="form-inline">
+    	<div class="d-flex flex-row justify-content-center">
+    	<button class="btn btn-light" type="button">Ingresar</button>
+    	</div>
+ 	</form>-->
+		</div>
+	</nav>
+	
+	<div class="container-fluid fondo-verde">
+		<div class="container fondo-fomulario">
+			<div class="row justify-content-center cabeza wow fadeInUp " data-wow-delay="0.2s">
+				<img src="img/titulo.png" alt="">
+			</div>
+			<hr>
+			<div class="row justify-content-center titular wow fadeInUp " data-wow-delay="0.3s">
+				<h2>&iquest;Desea comunicarse con  nosotros?</h2>
+			</div>
+			<div class="row justify-content-center frase wow fadeInUp " data-wow-delay="0.5s">
+				<p>Env&iacute;enos sus datos a trav&eacute;s del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
+			</div>
+			<div class="row form-style justify-content-center">
+				<div class="col-lg-10 col-md-8 ">
+					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
+
+						<div class="form-group row">							
+								<label class="col-2 col-form-label">Nombre</label>					
+								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						</div>
+
+
+						
+						<div class="form-group row">
+							
+								<label class="col-2 col-form-label">Correo</label>
+								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
+								<p class="help-block"></p>
+						</div>
+						
+						<div class="form-group row">
+									<label class="col-2 col-form-label">Dni</label>
+								
+									<input type="number" minlength="7" maxlength="9" class="form-control col-10" id="tel"  required name="tel" placeholder="Ingrese su nro documento">
+						</div>
+
+						
+						
+						
+						<div class="form-group row">	
+								<label class="col-2 col-form-label">Domicilio</label>
+								
+							
+								<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
+								
+						</div>	
+						
+					
+					<?php echo some_field.value[0] ?>
+
+			
+
+
+						<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right" >Enviar</button>
+                        <a type="button btn-light" id="ML" name="MLbutton" href="http://mpago.la/FGDm" class="btn btn-primary pull-right" target="_blank">Tarjetas Visa,Mastercard</a>
+                        <button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar2</button>
+                        <a mp-mode="dftl" href="http://mpago.la/FGDm" name="MP-payButton" class='blue-ar-l-rn-none' target="_blank">Suscribirme</a>
+                        <script type="text/javascript">
+                            (function() {
+                                function $MPC_load() {
+                                    window.$MPC_loaded !== true && (function() {
+                                        var s = document.createElement("script");
+                                        s.type = "text/javascript";
+                                        s.async = true;
+                                        s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                                        var x = document.getElementsByTagName('script')[0];
+                                        x.parentNode.insertBefore(s, x);
+                                        window.$MPC_loaded = true;
+                                    })();
+                                }
+                                window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+                            })();
+                        </script>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--otro formulario-Para Tarjetas Naranaja,Nevada,etc!-->
+	<div class="container-fluid fondo-verde">
+		<div class="container fondo-fomulario">
+			<div class="row form-style justify-content-center">
+				<div class="col-lg-10 col-md-8 ">
+					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
+
+						<div class="form-group row">							
+								<label class="col-2 col-form-label">Nombre</label>					
+								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						</div>
+
+
+						
+						<div class="form-group row">
+							
+								<label class="col-2 col-form-label">Correo</label>
+								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
+								<p class="help-block"></p>
+						</div>
+						
+						<div class="form-group row">
+									<label class="col-2 col-form-label">Dni</label>
+								
+									<input type="number" minlength="7" maxlength="9" class="form-control col-10" id="tel"  required name="tel" placeholder="Ingrese su nro documento">
+						</div>
+
+						
+						
+						
+						<div class="form-group row">	
+								<label class="col-2 col-form-label">Domicilio</label>
+								
+							
+								<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
+								
+						</div>	
+						
+					
+					<?php echo some_field.value[0] ?>
+
+			
+
+
+						<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right" >Enviar</button>
+                        <a type="button btn-light" id="ML" name="MLbutton" href="http://mpago.la/FGDm" class="btn btn-primary pull-right" target="_blank">Tarjetas Visa,Mastercard</a>
+                        <button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar2</button>
+                        <a mp-mode="dftl" href="http://mpago.la/FGDm" name="MP-payButton" class='blue-ar-l-rn-none' target="_blank">Suscribirme</a>
+                        <script type="text/javascript">
+                            (function() {
+                                function $MPC_load() {
+                                    window.$MPC_loaded !== true && (function() {
+                                        var s = document.createElement("script");
+                                        s.type = "text/javascript";
+                                        s.async = true;
+                                        s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                                        var x = document.getElementsByTagName('script')[0];
+                                        x.parentNode.insertBefore(s, x);
+                                        window.$MPC_loaded = true;
+                                    })();
+                                }
+                                window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+                            })();
+                        </script>
+					</form>
+				</div>
+			</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+	<div class="footer">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-4">
+					<h4>Contactanos</h4>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 </p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> mailmail@mail.com</p>
+					<p><i class="fa fa-home" aria-hidden="true"></i> direccion de la oficina</p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Acerca de Nosotros</h4>
+					<p>La empresa</p>
+					<p>Privacidad</p>
+					<p>Terminos y condiciones</p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Sigamos juntos</h4>
+					<i class="social fa fa-facebook-official" aria-hidden="true"></i>
+					<i class="social fa fa-twitter" aria-hidden="true"></i>
+					<i class="social fa fa-google-plus" aria-hidden="true"></i>
+					<i class="social fa fa-whatsapp" aria-hidden="true"></i>
+					<i class="social fa fa-youtube" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="container separador">
+			<hr>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+	</div>
+
+	<div class="container-fluid autor">
+		<p>Desarrollado por Acosta Argañaraz & Blanco</p>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/localizacion.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script>
+	 	$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+	</script>
+
+</body>
+
+</html>
