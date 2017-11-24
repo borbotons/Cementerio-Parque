@@ -11,31 +11,6 @@ div.emergencia
 	padding-top: 15px;
 }
 
-.navbar
-{
-	background-color: #71c837;
-}
-
-.nav-link
-{
-	color: white;
-	opacity: 0.7;
-
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	line-height: 30px;
-
-	height: 50px;
-	transition: background-color 0.9s;
-}
-
-.nav-link:hover
-{
-	color: black;
-	opacity: 1;
-	background-color: white !important;
-}
-
 div.cabeza
 {
 	width: 100%;
