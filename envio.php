@@ -31,7 +31,7 @@
             //Mensajes de Exito o Fallo
             if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
                 
-               header( "refresh:0;http://www.parquevirgen.com.mialias.net/contacto.html" );
+               header( "refresh:0;http://www.virgenmorena.com.mialias.net/contacto.html" );
                echo "<script>alert('Mensaje enviado, ¡Gracias!.');</script>";
                die();
                //die("Gracias, su mensaje se envio correctamente.");

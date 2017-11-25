@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="img/hojita.ico">
+
+
 </head>
 
 <body onload="initialize()">
@@ -26,12 +28,41 @@
 		</div>
 	</div>
 
-
-	<nav class="navbar sticky-top navbar-expand-lg">
-		<button class="navbar-toggler navbar-toggler-right blanco" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar sticky-top navbar-expand-lg">
+  <button class="navbar-toggler navbar-toggler-right blanco" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+<<<<<<< HEAD
+  <a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"></a>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01"> 
+    <ul class="navbar-nav mr-auto ml-auto text-center">
+      
+	    	<li class="active">
+	        <a class="nav-link" href="./servicios.html">Servicios</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="./novedades.html">Novedades</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="./parque.html">El Parque</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="./institucional.html">Institucional</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="./contacto.html">Contacto</a>
+	      </li>
+	 
+    </ul>
+    <div class="">
+		<a href="./ingresar.html"><button class="btn btn-light" type="button">Ingresar</button></a>
+	</div>
+  </div>
+</nav>
+
+	
+=======
 		<a class="navbar-brand" href="./index.html"><img src="img/logo blanco.png" alt="" width="40px"></a>
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -61,6 +92,7 @@
  	</form>-->
 		</div>
 	</nav>
+>>>>>>> origin/master
 	
 	<div class="container-fluid fondo-verde">
 		<div class="container fondo-fomulario">
@@ -69,143 +101,191 @@
 			</div>
 			<hr>
 			<div class="row justify-content-center titular wow fadeInUp " data-wow-delay="0.3s">
-				<h2>&iquest;Desea comunicarse con  nosotros?</h2>
+				<h2>Solicitud de  adherencia al Servicio de Cementerio V. Morena</h2>
 			</div>
 			<div class="row justify-content-center frase wow fadeInUp " data-wow-delay="0.5s">
-				<p>Env&iacute;enos sus datos a trav&eacute;s del formulario y nos contactaremos para brindarle la asistencia que necesite.</p>
+				<p>Por favor complete los datos del formulario.Asi su solicitud de asherencia, pueda ser examinada por la administraci&oacute;n.Gracias .</p>
 			</div>
 			<div class="row form-style justify-content-center">
 				<div class="col-lg-10 col-md-8 ">
-					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
+					
 
-						<div class="form-group row">							
-								<label class="col-2 col-form-label">Nombre</label>					
-								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+<!--<form name="formularioss" id="formularioss" method="GET"  action="none"> -->
+
+						<div class="form-group row">
+						<label class="col-2 col-form-label">Servicio</label>
+							<select name="a" class="form-control col-10" onchange="operacion()" id="a">
+										<option value="1">Plan Grupo Familiar Premium</option>
+										<option value="2">Plan Grupo Familiar Directo</option>
+										<option value="3">Plan Cementerio Parque Premiun</option>
+										<option value="4">Plan Cementerio Parque</option>
+										<option value="5">Servicio F&uacute;nebre Premium</option>
+										<option value="6">Servicio F&uacute;nebre Solo</option>
+							</select>
+						</div>
+						<div class="form-group row">
+						<label class="col-2 col-form-label">Adherentes</label>
+							<select name="b" class="form-control col-10" onchange="operacion()" id="b">
+										<option value="0">0-Precio Base</option>
+										<option value="1">+1</option>
+										<option value="2">+2</option>
+										<option value="3">+3</option>
+										<option value="4">+4</option>
+										<option value="5">+5</option>
+							</select>
+
 						</div>
 
 
-						
 						<div class="form-group row">
 							
-								<label class="col-2 col-form-label">Correo</label>
-								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
-								<p class="help-block"></p>
-						</div>
-						
-						<div class="form-group row">
-									<label class="col-2 col-form-label">Dni</label>
+								<label class="col-2 col-form-label">Precio Final $</label>
+								<input type="text" class="form-control col-10"   name="preciofinal"  id="preciofinal" disabled value="400">	
 								
-									<input type="number" minlength="7" maxlength="9" class="form-control col-10" id="tel"  required name="tel" placeholder="Ingrese su nro documento">
-						</div>
+						
+							
+							</div>
+						<p >Pagar con</p> 
 
 						
 						
+
 						
-						<div class="form-group row">	
-								<label class="col-2 col-form-label">Domicilio</label>
+
+
+						<input type="button" name="hola" value="Tarjeta Naranja" onclick="mostrar()">
+						<input type="button" name="hola" value="Tarjeta Nevada" onclick="mostrar()">
+						<input type="button" name="hola" value="Tarjeta Visa" onclick="mostrar2()">
+						<input type="button" name="hola" value="Tarjeta Nativa Mastercard" onclick="mostrar2()">
+						<input type="button" name="hola" value="Otras Tarjetas" onclick="mostrar()">
+
+
+
+
+							<div id="flotante" style="display:none;">
+
+								<form name="contacto" id="contacto" action="controllers/envio2.php" method="post">    
+								<br>
+								<div class="form-group row">							
+									<label class="col-2 col-form-label">Nombre</label>					
+									<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+							</div>
+
+
+							
+							<div class="form-group row">
+								
+									<label class="col-2 col-form-label">Correo</label>
+									<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
+									<p class="help-block"></p>
+							</div>
+							
+							<div class="form-group row">
+										<label class="col-2 col-form-label">Tarjeta</label>
+									
+										<input type="number" maxlength="16"  class="form-control col-10" id="tar"  required name="tar" placeholder="XXXX-XXXX-XXXX-XXXX" >
+							</div>
+
+							<div class="form-group row">
+										<label class="col-2 col-form-label">Vencimiento</label>
+									
+										<input type="number" minlength="4" class="form-control col-10" id="tarvenc"  required name="tarvenc" placeholder="XX/XX">
+							</div>
+							
+							
+							<div class="form-group row">	
+									<label class="col-2 col-form-label">Domicilio</label>
+									
+								
+									<input type="text" minlength="8" class="form-control col-10" id="autocompletez" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
+									
+							</div>	
+
+							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="https://www.google.com.ar/" >Terminos </a>y <a href="https://www.google.com.ar/" >Condiciones </a></label><br>
+
+							<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar</button>
+							
+
+
+
+							</form>
+
+							</div>
+
+
+
+							<div id="flotante2" style="display:none;">
+
+							<form name="contacto2" id="contacto2" action="controllers/enviomer.php" method="post"> 
 								
 							
-								<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
+
+								<br>
+								<div class="form-group row">							
+									<label class="col-2 col-form-label">Nombre</label>					
+									<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+							</div>
+
+							<div class="form-group row">	
+									<label class="col-2 col-form-label">Domicilio</label>
+									
 								
-						</div>	
+									<input type="text" minlength="8" class="form-control col-10" id="autocompletez" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
+									
+							</div>	
+
+							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="https://www.google.com.ar/" >Terminos </a>y <a href="https://www.google.com.ar/" >Condiciones </a></label><br>
+
+	                        <button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Suscribirme</button>
+
+
+
+	                        </form>
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+						
+<!--</form>-->
+
+
+
+
+
+						
+
 						
 					
-					<?php echo some_field.value[0] ?>
-
+					
 			
 
 
-						<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right" >Enviar</button>
-                        <a type="button btn-light" id="ML" name="MLbutton" href="http://mpago.la/FGDm" class="btn btn-primary pull-right" target="_blank">Tarjetas Visa,Mastercard</a>
-                        <button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar2</button>
-                        <a mp-mode="dftl" href="http://mpago.la/FGDm" name="MP-payButton" class='blue-ar-l-rn-none' target="_blank">Suscribirme</a>
-                        <script type="text/javascript">
-                            (function() {
-                                function $MPC_load() {
-                                    window.$MPC_loaded !== true && (function() {
-                                        var s = document.createElement("script");
-                                        s.type = "text/javascript";
-                                        s.async = true;
-                                        s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-                                        var x = document.getElementsByTagName('script')[0];
-                                        x.parentNode.insertBefore(s, x);
-                                        window.$MPC_loaded = true;
-                                    })();
-                                }
-                                window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-                            })();
-                        </script>
-					</form>
+						
+					
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-<!--otro formulario-Para Tarjetas Naranaja,Nevada,etc!-->
-	<div class="container-fluid fondo-verde">
-		<div class="container fondo-fomulario">
-			<div class="row form-style justify-content-center">
-				<div class="col-lg-10 col-md-8 ">
-					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
 
-						<div class="form-group row">							
-								<label class="col-2 col-form-label">Nombre</label>					
-								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
-						</div>
-
-
-						
-						<div class="form-group row">
-							
-								<label class="col-2 col-form-label">Correo</label>
-								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
-								<p class="help-block"></p>
-						</div>
-						
-						<div class="form-group row">
-									<label class="col-2 col-form-label">Dni</label>
-								
-									<input type="number" minlength="7" maxlength="9" class="form-control col-10" id="tel"  required name="tel" placeholder="Ingrese su nro documento">
-						</div>
-
-						
-						
-						
-						<div class="form-group row">	
-								<label class="col-2 col-form-label">Domicilio</label>
-								
-							
-								<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" onFocus="geolocate()">
-								
-						</div>	
-						
 					
-					<?php echo some_field.value[0] ?>
+					
+					
 
 			
 
 
-						<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right" >Enviar</button>
-                        <a type="button btn-light" id="ML" name="MLbutton" href="http://mpago.la/FGDm" class="btn btn-primary pull-right" target="_blank">Tarjetas Visa,Mastercard</a>
-                        <button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar2</button>
-                        <a mp-mode="dftl" href="http://mpago.la/FGDm" name="MP-payButton" class='blue-ar-l-rn-none' target="_blank">Suscribirme</a>
-                        <script type="text/javascript">
-                            (function() {
-                                function $MPC_load() {
-                                    window.$MPC_loaded !== true && (function() {
-                                        var s = document.createElement("script");
-                                        s.type = "text/javascript";
-                                        s.async = true;
-                                        s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-                                        var x = document.getElementsByTagName('script')[0];
-                                        x.parentNode.insertBefore(s, x);
-                                        window.$MPC_loaded = true;
-                                    })();
-                                }
-                                window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-                            })();
-                        </script>
+						
+                        
 					</form>
 				</div>
 			</div>
@@ -256,6 +336,8 @@
 		<p>Desarrollado por Acosta Argañaraz & Blanco</p>
 	</div>
 
+	<script type="text/javascript" src="js/plansuma.js"></script>
+	<script type="text/javascript" src="js/extras.js"></script>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="js/localizacion.js"></script>
