@@ -67,18 +67,40 @@
             <h1 class="text-center login-title"></h1>
             <div class="account-wall">
                 <img class="profile-img" src="img/logo.png" alt="">
-                <form class="form-signin">
-	                <input type="text" class="form-control" placeholder="Usuario" required autofocus>
-	                <input type="password" class="form-control" placeholder="Contrase&ntilde;a" required>
-	                <button class="btn btn-lg btn-success btn-block" type="submit">
-	                    Ingresar</button>
-	                <label class="checkbox pull-left">
-	                    <input type="checkbox" value="remember-me">
-	                    Recordarme
-	                </label>
+
+
+                <form class="form-signin" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" name="login">
+
+	                <input type="text" class="form-control" placeholder="Usuario" required autofocus name="usuario">
+
+	                <input type="password" class="form-control" placeholder="Contrase&ntilde;a" required name="password">
+
+
+	                <button class="btn btn-lg btn-success btn-block" type="submit" onclick="login.submit()">Ingresar </button>
 	                
+	                
+<!--Agregar categoria de errores en css-->
+
+	               <?php if (!empty($errores)): ?>
+					<div class="error">
+					<ul>
+					
+					<?php echo $errores; ?>
+					</ul>
+				
+
+					</div>
+					<?php  endif; ?>	
+
+
+
+
+
                 </form>
-                <a href="./solicitud.php" class="text-center new-account">Registrar cuenta</a>
+                <a href="./registrar.php" class="text-center new-account">Registrar cuenta</a>
+                
+               
+
             </div>
             
         </div>

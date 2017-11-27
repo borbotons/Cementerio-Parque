@@ -20,6 +20,15 @@ button
    margin-bottom: 20px;
 }
 
+
+.form-signin .error ul {
+    padding: 0 15px;
+}
+
+.form-signin .error ul li {
+    margin-bottom: 10px;    
+}
+
 .form-signin
 {
     max-width: 330px;
@@ -95,3 +104,4 @@ button
     display: block;
     margin-top: 10px;
 }
+
