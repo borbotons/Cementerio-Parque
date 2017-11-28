@@ -5,12 +5,12 @@
 
 
 	<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
-	<title> Contacto | Virgen Morena</title>
+	<title> Suscripci&oacuten | Virgen Morena</title>
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/contacto.css">
+	<link rel="stylesheet" type="text/css" href="css/solicitud.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="img/hojita.ico">
@@ -28,51 +28,52 @@
 		</div>
 	</div>
 
-<nav class="navbar sticky-top navbar-expand-lg">
-  <button class="navbar-toggler navbar-toggler-right blanco" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-		<a class="navbar-brand" href="./index.html"><img src="img/logo blanco.png" alt="" width="40px"></a>
-
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			<ul class="navbar-nav mr-auto ml-auto text-center">
-
-				<li class="nav-item">
-					<a class="nav-link" href="./servicios.html">Servicios</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./novedades.html">Novedades</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./parque.html">El Parque</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./institucional.html">Institucional</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./contacto.html">Contacto</a>
-				</li>
-
-			</ul>
-			<!-- <form class="form-inline">
-    	<div class="d-flex flex-row justify-content-center">
-    	<button class="btn btn-light" type="button">Ingresar</button>
-    	</div>
- 	</form>-->
-		</div>
-	</nav>
+	<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #71c837;">
+			<a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"> </a>
+		
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSite" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="navbarSite"> 
+				<ul class="navbar-nav mr-auto ml-auto text-center">
+				  
+					  <li class="nav-item">
+						<a class="nav-link" href="./servicios.html">Servicios</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./novedades.html">Novedades</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./parque.html">El Parque</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./institucional.html">Institucional</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Contacto</a>
+					  </li>
+				 
+				</ul>
+				
+					<div class="">
+						<a href="./ingresar.php"><button class="btn btn-light" type="button">Ingresar</button></a>
+					</div>
+			</div>
+		</nav>
 	
 	<div class="container-fluid fondo-verde">
 		<div class="container fondo-fomulario">
 			<div class="row justify-content-center cabeza wow fadeInUp " data-wow-delay="0.2s">
 				<img src="img/titulo.png" alt="">
 			</div>
-			<hr>
-			<div class="row justify-content-center titular wow fadeInUp " data-wow-delay="0.3s">
-				<h2>Solicitud de  adherencia al Servicio de Cementerio V. Morena</h2>
+			
+			<div class="row subtitulo wow fadeInUp " data-wow-delay="0.3s">
+				<h2> <i class="fa fa-paper-plane" aria-hidden="true"></i> Solicitud de Adherencia</h2>
 			</div>
 			<div class="row justify-content-center frase wow fadeInUp " data-wow-delay="0.5s">
-				<p>Por favor complete los datos del formulario.Asi su solicitud de asherencia, pueda ser examinada por la administraci&oacute;n.Gracias .</p>
+				<p>Por favor complete el siguiente formulario de adherencia, de esta manera se formalizar&aacute
+					 su solicitud y podr&aacute ser examinada por la administraci&oacute;n.</p>
 			</div>
 			<div class="row form-style justify-content-center">
 				<div class="col-lg-10 col-md-8 ">
@@ -94,38 +95,37 @@
 						<div class="form-group row">
 						<label class="col-2 col-form-label">Adherentes</label>
 							<select name="b" class="form-control col-10" onchange="operacion()" id="b">
-										<option value="0">0-Precio Base</option>
-										<option value="1">+1</option>
-										<option value="2">+2</option>
-										<option value="3">+3</option>
-										<option value="4">+4</option>
-										<option value="5">+5</option>
+										<option value="0">Precio Base (sin adherentes)</option>
+										<option value="1">+1 adherente</option>
+										<option value="2">+2 adherentes</option>
+										<option value="3">+3 adherentes</option>
+										<option value="4">+4 adherentes</option>
+										<option value="5">+5 adherentes</option>
 							</select>
 
 						</div>
 
 
-						<div class="form-group row">
+						<div class="form-group row precio">
 							
-								<label class="col-2 col-form-label">Precio Final $</label>
-								<input type="text" class="form-control col-10"   name="preciofinal"  id="preciofinal" disabled value="400">	
+								<label class="col-2 col-form-label" style="color: white">Precio Final: </label>
+								<input class="precio_total" type="text" class="form-control col-10"   name="preciofinal"  id="preciofinal" disabled value="$ 400">	
 								
 						
 							
-							</div>
-						<p >Pagar con</p> 
+						</div>
 
+						<div class="row">
+							<p>Formas de Pago:</p> 
+						</div>
+						<div class="row justify-content-center">
+							<input class="tarjeta" type="button" name="hola" value="Tarjeta Naranja" onclick="mostrar()">
+							<input class="tarjeta" type="button" name="hola" value="Tarjeta Nevada" onclick="mostrar()">
+							<input class="tarjeta" type="button" name="hola" value="Tarjeta Visa" onclick="mostrar2()">
+							<input class="tarjeta" type="button" name="hola" value="Tarjeta Nativa Mastercard" onclick="mostrar2()">
+							<input class="tarjeta" type="button" name="hola" value="Otras Tarjetas" onclick="mostrar()">
+						</div>
 						
-						
-
-						
-
-
-						<input type="button" name="hola" value="Tarjeta Naranja" onclick="mostrar()">
-						<input type="button" name="hola" value="Tarjeta Nevada" onclick="mostrar()">
-						<input type="button" name="hola" value="Tarjeta Visa" onclick="mostrar2()">
-						<input type="button" name="hola" value="Tarjeta Nativa Mastercard" onclick="mostrar2()">
-						<input type="button" name="hola" value="Otras Tarjetas" onclick="mostrar()">
 
 
 
@@ -286,11 +286,7 @@
 				</div>
 				<div class="col-lg-4">
 					<h4>Sigamos juntos</h4>
-					<i class="social fa fa-facebook-official" aria-hidden="true"></i>
-					<i class="social fa fa-twitter" aria-hidden="true"></i>
-					<i class="social fa fa-google-plus" aria-hidden="true"></i>
-					<i class="social fa fa-whatsapp" aria-hidden="true"></i>
-					<i class="social fa fa-youtube" aria-hidden="true"></i>
+					<i class="social fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/CementerioParqueVirgenMorena/?ref=br_rs" target="_blank">Virgen Morena Fanpage</a>
 				</div>
 			</div>
 		</div>
@@ -301,7 +297,7 @@
 	</div>
 
 	<div class="container-fluid autor">
-		<p>Desarrollado por Acosta Argañaraz & Blanco</p>
+			<p><strong>Copyright &copy; 2017 Desarrollado por Acosta Arga&ntilde;araz - Blanco.</strong> Todos los derechos reservados. </p>
 	</div>
 
 	<script type="text/javascript" src="js/plansuma.js"></script>

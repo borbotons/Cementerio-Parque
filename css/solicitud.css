@@ -1,0 +1,175 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+div.emergencia
+{
+	height: 50px;
+	background: white;
+	padding-top: 15px;
+}
+
+.fondo-verde
+{
+	min-height: 1100px;
+	background-color: #50b204; 
+	padding-top: 30px;
+	padding-bottom: 70px;
+}
+
+.fondo-fomulario
+{
+	min-height: 1000px;
+	width: 900px;
+	background-color: white;
+	
+	padding-bottom: 20px;
+	 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.cabeza
+{
+    padding-top: 30px;
+}
+
+.cabeza img
+{
+	width: 50%;
+	height: 50%;
+}
+
+.titular
+{
+	padding-top: 30px;
+	font-family: 'Lato';
+}
+
+.frase
+{
+    padding-top: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+
+    text-align: center;
+    font-style: italic;
+}
+
+.precio
+{
+    background: #50b204; 
+    padding: 5px 1px;
+}
+
+.precio_total
+{
+    background: #50b204; 
+    width: 80%;
+    border: 1px dotted white;
+    border-radius: 50px;
+
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.form-style
+{
+    padding-top: 40px;
+    border-top: 1px dotted #a5e541;
+}
+
+.controls 
+{
+	width: 400px;
+}
+
+.tarjeta
+{
+    min-width: 150px;
+    height: 40px;
+
+    font-family: 'Lato';
+    color: #50b204; 
+    cursor: pointer;
+
+    border: 1px solid #50b204; 
+    background: white;
+
+    overflow: hidden;
+    transition: color 0.3s ease-out;
+    
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.tarjeta:hover
+{
+    color: white;
+    background: #50b204; 
+    transition: background 0.5s linear;
+}
+
+.tarjeta:focus
+{
+    color: white;
+    background: #50b204; 
+}
+
+
+.footer
+{
+	height: 300px;
+	background: #2D2D37;
+	color: #ccc;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.footer .social
+{
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.separador
+{
+	width: 60%;
+	background-color: #ccc;
+}
+
+div.autor
+{
+	height: 50px;
+	background: #25252d;
+	color: white;
+	font-size: 15px;
+	padding-top: 15px;
+	font-family: 'Lato Hairline';
+}
+
+
+.subtitulo
+{
+    display: block;
+
+    background: #50b204; 
+    padding: 5px 10px;
+
+    margin-top: 30px;
+
+    font-family: 'Lato';
+}
+
+.subtitulo h2 
+{
+    color: white;
+}

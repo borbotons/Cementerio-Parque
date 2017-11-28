@@ -1,19 +1,7 @@
 <?php
 
-
-
 require 'solicitud.html';
 
-
-
-
-
-
-
-
-
-
-
- ?>
+?>
 
 
