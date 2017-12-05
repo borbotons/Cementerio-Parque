@@ -278,43 +278,8 @@ a:hover
 	height: 150%;
 }
 
-.footer
-{
-	height: 300px;
-	background: #2D2D37;
-	color: #ccc;
-	padding-top: 50px;
-	text-align: center;
-}
-
 .package button
 {
 	margin-top: 10px;
 }
 
-.footer .social
-{
-	font-size: 20px;
-	height: 30px;
-	width: 30px;
-	text-align: center;
-	padding: 5px;
-	margin-bottom: 10px;
-	margin-right: 5px;
-}
-
-.separador
-{
-	width: 60%;
-	background-color: #ccc;
-}
-
-div.autor
-{
-	height: 50px;
-	background: #25252d;
-	color: white;
-	font-size: 15px;
-	padding-top: 15px;
-	font-family: 'Lato Hairline';
-}

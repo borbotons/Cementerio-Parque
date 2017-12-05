@@ -1,0 +1,14 @@
+.fondo
+{
+    background: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.base
+{
+    background: white;
+
+    border-top: 8px solid rgba(80, 178, 4, 0.88);
+    padding-top: 30px;
+}

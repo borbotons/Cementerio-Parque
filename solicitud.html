@@ -11,6 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/solicitud.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css"> 
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="img/hojita.ico">
@@ -61,7 +64,23 @@
 					</div>
 			</div>
 		</nav>
-	
+
+	<div class="md-modal md-effect-9" id="modal-9">    <!-- ventana modal con contenido para el usuario-->
+		<div class="md-content">
+			<h3>Verificaci&oacuten de Subscripci&oacuten</h3>
+			<div>
+				<p>Ya casi hemos terminado! Antes de completar la suscripci&oacuten, necesitamos que consideres los siguientes puntos:</p>
+				<ul>
+					<li><strong>Primero:</strong> Haber le&iacutedo y aceptado los terminos y condiciones.</li>
+					<li><strong>Segundo:</strong> Tener presente que la suscripci&oacuten es un acuerdo entre partes con deberes, obligaciones y derechos.</li>
+					<li><strong>Tercero:</strong> Estar listo/a para recibir la mejor covertura de la Ciudad de San Fernando del Valle de Catamarca.</li>
+				</ul>
+				<button class="md-close">Cancelar</button>
+				<button id="btnsubmit" name="submit"  class="md-close">Cerrar y Confirmar</button>
+			</div>
+		</div>
+	</div>     <!-- /ventana modal con contenido para el usuario-->
+
 	<div class="container-fluid fondo-verde">
 		<div class="container fondo-fomulario">
 			<div class="row justify-content-center cabeza wow fadeInUp " data-wow-delay="0.2s">
@@ -80,7 +99,9 @@
 					
 
 <!--<form name="formularioss" id="formularioss" method="GET"  action="none"> -->
-
+			<div class="row seccion">
+					<h2>1. Selecci&oacuten del Servicio</h2>
+			</div>
 						<div class="form-group row">
 						<label class="col-2 col-form-label">Servicio</label>
 							<select name="a" class="form-control col-10" onchange="operacion()" id="a">
@@ -114,9 +135,11 @@
 						
 							
 						</div>
-
+			<div class="row seccion" style="padding-top: 10px;">
+					<h2>2. Selecci&oacuten de Forma de Pago</h2>
+			</div>
 						<div class="row">
-							<p>Formas de Pago:</p> 
+							<p>Formas de Pago disponibles:</p> 
 						</div>
 						<div class="row justify-content-center">
 							<input class="tarjeta" type="button" name="hola" value="Tarjeta Naranja" onclick="mostrar()">
@@ -171,7 +194,7 @@
 
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="https://www.google.com.ar/" >Terminos </a>y <a href="https://www.google.com.ar/" >Condiciones </a></label><br>
 
-							<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Enviar</button>
+							<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right md-trigger" data-modal="modal-9">Suscribirme</button>
 							
 
 
@@ -204,7 +227,7 @@
 
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="https://www.google.com.ar/" >Terminos </a>y <a href="https://www.google.com.ar/" >Condiciones </a></label><br>
 
-	                        <button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right">Suscribirme</button>
+	                        <button type="button btn-light submit" class="btn btn-primary pull-right md-trigger" data-modal="modal-9">Suscribirme</button>
 
 
 
@@ -314,7 +337,20 @@
 	<script>
 	 	$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
 	</script>
+	<div class="md-overlay"></div><!-- the overlay element -->
+	
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
 
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="js/cssParser.js"></script>
+	<script src="js/css-filters-polyfill.js"></script>
 </body>
 
 </html>
