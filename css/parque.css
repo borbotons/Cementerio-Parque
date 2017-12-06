@@ -94,6 +94,11 @@ div.parque
 	text-align: right;
 }
 
+.numero h3
+{
+	color: white;
+}
+
 .detalle
 {
 	padding-top: 50px;

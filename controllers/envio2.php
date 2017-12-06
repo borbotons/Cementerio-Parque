@@ -8,9 +8,7 @@
             $domicilio = $_POST['domicilio'];
             $tar = $_POST['tar'];
             $tarvenc = $_POST['tarvenc'];
-            $servicio  = "Plan Grupo Familiar Premium";
-            $adherentes = "+5";
-            $preciofinal = "$775";
+            $servicio  =  $_POST['planselec'];
             $mensajeC = "Naranja/Nevada";
 
 
@@ -28,8 +26,6 @@
             $mensaje .= "Tarjeta: " . $tar . " \r\n";
             $mensaje .= "T.Venc: " . $tarvenc . " \r\n";
             $mensaje .= "Servicio: " . $servicio . " \r\n";
-            $mensaje .= "Cant.adherentes: " . $adherentes . " \r\n";
-            $mensaje .= "Precio Total Cotizado: " . $preciofinal . " \r\n";
             $mensaje .= "Mensaje: " . $mensajeC . " \r\n";
             $mensaje .= "Enviado el " . date('d/m/Y', time());
             //Destinatario del Correo
