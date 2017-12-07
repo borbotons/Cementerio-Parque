@@ -52,8 +52,8 @@ function operacion(boton){
 			document.getElementById('holas').value =valor4;
 		}
 	
-		document.getElementById('preciofinal').value= valor;
-	
+		document.getElementById('preciofinal').value= '$'+valor;
+		document.contacto2.hos.value= 'www.trucoteca.com';
 		
 	
 	}
@@ -96,7 +96,7 @@ function operacion(boton){
 			document.getElementById('holas').value =valor4;
 		}
 	
-		document.getElementById('preciofinal').value=valor;
+		document.getElementById('preciofinal').value='$'+valor;
 	
 	}
 	
@@ -138,7 +138,7 @@ function operacion(boton){
 			document.getElementById('holas').value =valor4;
 		}
 	
-		document.getElementById('preciofinal').value=valor;
+		document.getElementById('preciofinal').value='$'+valor;
 	
 	}
 	
@@ -180,7 +180,7 @@ function operacion(boton){
 			document.getElementById('holas').value =valor4;
 		}
 	
-		document.getElementById('preciofinal').value=valor;
+		document.getElementById('preciofinal').value='$'+valor;
 	
 	}
 	if (select_a==5) {
@@ -221,7 +221,7 @@ function operacion(boton){
 			document.getElementById('holas').value =valor4;
 		}
 	
-		document.getElementById('preciofinal').value=valor;
+		document.getElementById('preciofinal').value='$'+valor;
 	
 	}
 	if (select_a==6) {
@@ -262,7 +262,7 @@ function operacion(boton){
 			document.getElementById('holas').value =valor4;
 		}
 	
-		document.getElementById('preciofinal').value=valor;
+		document.getElementById('preciofinal').value='$'+valor;
 	
 	}
 	

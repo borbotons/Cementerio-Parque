@@ -2,8 +2,13 @@
 
 
 //$var = $_POST['botonmerc'];
+$var =$_POST['hos'];
 
-header( "refresh:0;http://mpago.la/HVrz" );
+//header( "refresh:0;http://mpago.la/HVrz" );
+
+
+header( "refresh:0";hos );
+
 //echo "<script>alert('Correo enviado, ¡Gracias!.');</script>";
 die();
 
