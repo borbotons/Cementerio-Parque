@@ -25,35 +25,41 @@ function operacion(boton){
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
 			document.getElementById('merc').placeholder = valor4 ;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==1){
 			valor4="PGrupo Familiar Premium +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==2){
 			valor4="PGrupo Familiar Premium +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==3){
 			valor4="PGrupo Familiar Premium +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==4){
 			valor4="PGrupo Familiar Premium +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==5){
 			valor4="PGrupo Familiar Premium +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value= 'http://mpago.la/Jh8U';
 		}
 	
 		document.getElementById('preciofinal').value= '$'+valor;
-		document.contacto2.hos.value= 'www.trucoteca.com';
+		//document.contacto2.hos.value= 'www.trucoteca.com';
 		
 	
 	}
@@ -69,31 +75,37 @@ function operacion(boton){
 			valor4="PGrupo Familiar Directo Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==1){
 			valor4="PGrupo Familiar Directo +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==2){
 			valor4="PGrupo Familiar Directo +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==3){
 			valor4="PGrupo Familiar Directo +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==4){
 			valor4="PGrupo Familiar Directo +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==5){
 			valor4="PGrupo Familiar Directo +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 	
 		document.getElementById('preciofinal').value='$'+valor;
@@ -111,31 +123,37 @@ function operacion(boton){
 			valor4="PCementerio Parque Premium Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==1){
 			valor4="PCementerio Parque Premiun +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==2){
 			valor4="PCementerio Parque Premium +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==3){
 			valor4="PCementerio Parque Premium +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==4){
 			valor4="PCementerio Parque Premium +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==5){
 			valor4="PCementerio Parque Premium +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 	
 		document.getElementById('preciofinal').value='$'+valor;
@@ -153,31 +171,37 @@ function operacion(boton){
 			valor4="PCementerio Parque  Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==1){
 			valor4="PCementerio Parque  +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==2){
 			valor4="PCementerio Parque  +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==3){
 			valor4="PCementerio Parque  +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==4){
 			valor4="PCementerio Parque  +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==5){
 			valor4="PCementerio Parque  +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 	
 		document.getElementById('preciofinal').value='$'+valor;
@@ -194,31 +218,37 @@ function operacion(boton){
 			valor4="Servicio Funebre Premium Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==1){
 			valor4="Servicio Funebre Premium +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==2){
 			valor4="Servicio Funebre Premium +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==3){
 			valor4="Servicio Funebre Premium +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==4){
 			valor4="Servicio Funebre Premium +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==5){
 			valor4="Servicio Funebre Premium +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 	
 		document.getElementById('preciofinal').value='$'+valor;
@@ -235,31 +265,37 @@ function operacion(boton){
 			valor4="Servicio Funebre Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==1){
 			valor4="Servicio Funebre +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==2){
 			valor4="Servicio Funebre +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==3){
 			valor4="Servicio Funebre +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==4){
 			valor4="Servicio Funebre +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 		if(select_b==5){
 			valor4="Servicio Funebre +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.contacto2.hos.value='';
 		}
 	
 		document.getElementById('preciofinal').value='$'+valor;
