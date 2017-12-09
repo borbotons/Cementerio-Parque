@@ -259,7 +259,8 @@ hr
 	min-height: 200px;
 	background-color: #50b204;
 	text-align: center;
-	padding-top: 50px;  
+	padding-top: 30px;  
+	padding-bottom: 30px; 
 	color: white;
 	font-family: 'Lato Hairline';
 }
@@ -320,7 +321,14 @@ div.servicios
 .e2
 {
 	padding-top: 60px;
-	margin: ;
+}
+
+.dato-apunca
+{
+	
+	color: white;
+	padding-left: 40px;
+	padding-top: 20px;
 }
 
 div.parque
