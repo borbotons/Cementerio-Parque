@@ -7,6 +7,12 @@
 	text-align: center;
 }
 
+.footer h4 
+{
+	border-bottom: 1px dotted white;
+	line-height: 36px;
+}
+
 .footer a
 {
 	color: white;

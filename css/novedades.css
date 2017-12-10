@@ -184,6 +184,16 @@ div.cabeza
 	font-weight: bold;
 }
 
+.card__title a
+{
+    color: black;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
 .card__subtitle
 {
 	margin: 0;

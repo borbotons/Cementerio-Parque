@@ -13,5 +13,32 @@
     padding-top: 30px;
 }
 
+.cuerpo-noticia p
+{
+    font-size: 18px;
+}
 
-/* comprar pan*/
+.cuerpo-noticia h4
+{
+    color: #5F5C5C;
+    margin-top: 30px;
+}
+
+.capital:first-letter
+{
+    float:left;
+    color:#222222;
+    background:white;
+    font-size:90px;
+    line-height:70px;
+    
+    margin-right: 5px; 
+}
+
+.borde
+{
+    border-bottom: 1px dotted #cccccc;
+    margin-bottom: 20px;
+
+    color: #555555;
+}
