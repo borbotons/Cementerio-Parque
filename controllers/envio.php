@@ -26,12 +26,12 @@
             $mensaje .= "Mensaje: " . $mensajeC . " \r\n";
             $mensaje .= "Enviado el " . date('d/m/Y', time());
             //Destinatario del Correo
-            $para = 'danieltesorero2009@gmail.com';
-            $asunto = 'Parque Virgen Morena-Clientes';
+            $para = 'cementerioparquevmorenacat@gmail.com';
+            $asunto = 'Parque Virgen Morena-Clientes-Consultas';
             //Mensajes de Exito o Fallo
             if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
                 
-               header( "refresh:0;http://www.parquevirgen.com.mialias.net/contacto.html" );
+               header( "refresh:0;http://www.parquevirgenmorena.com/" );
                echo "<script>alert('Mensaje enviado, ¡Gracias!.');</script>";
                die();
                //die("Gracias, su mensaje se envio correctamente.");
@@ -42,7 +42,7 @@
 
             } else {
                 echo "<script>alert('!Error,Por favor intente de nuevo ¡Gracias!.');</script>";
-                header("refresh:0;http://www.virgenmorena.com.mialias.net/contacto.php" )
+                header("refresh:0;http://www.parquevirgenmorena.com/solicitud.php" )
 
                //echo  $error = '<div class="alert alert-danger" role="alert"><p><strong>Mensaje sin enviar.Prueba nuevamente,disculpa las molestias.</div>';  
             } 

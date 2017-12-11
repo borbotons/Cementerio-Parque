@@ -1,5 +1,5 @@
 <?php
-    //Mandar correo a travez del hosting+version estandar.
+    
     header("Content-type: text/html;charset=\"utf-8\"");
     $error = ""; $mensajeExito = "";
             //Paso de datos mediante la url.
@@ -7,9 +7,11 @@
             $mail = $_POST['email'];
             $domicilio = $_POST['domicilio'];
             $tar = $_POST['tar'];
-            $tarvenc = $_POST['tarvenc'];
+            $tarvenc = $_POST['venmes'];
+            $tarvenc2 = $_POST['venanio'];
             $servicio  =  $_POST['planselec'];
             $mensajeC = "Naranja/Nevada";
+            $telefono = $_POST['tel'];
 
 
 
@@ -22,19 +24,20 @@
             //Cuerpo del Correo
             $mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
             $mensaje .= "Su e-mail es: " . $mail . " \r\n";
-            $mensaje .= " Direccion: " . $domicilio . " \r\n";
+            $mensaje .= "Direccion: " . $domicilio . " \r\n";
+            $mensaje .= " Tel: " . $telefono . " \r\n";
             $mensaje .= "Tarjeta: " . $tar . " \r\n";
-            $mensaje .= "T.Venc: " . $tarvenc . " \r\n";
+            $mensaje .= "T.Venc: " . $tarvenc ."|".$tarvenc2. "\r\n";
             $mensaje .= "Servicio: " . $servicio . " \r\n";
             $mensaje .= "Mensaje: " . $mensajeC . " \r\n";
             $mensaje .= "Enviado el " . date('d/m/Y', time());
             //Destinatario del Correo
-            $para = 'danieltesorero2009@gmail.com';
-            $asunto = 'Parque Virgen Morena-Clientes-Adherenc-Tarjeta';
+            $para = 'cementerioparquevmorenacat@gmail.com';
+            $asunto = 'Parque Virgen Morena-Clientes-DebitoAutomatico-Tarjeta';
             //Mensajes de Exito o Fallo
             if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
                 
-               header( "refresh:0;http://www.parquevirgen.com.mialias.net/index.html" );
+               header( "refresh:0;http://www.parquevirgenmorena.com/" );
                echo "<script>alert('Correo enviado, ¡Gracias!.');</script>";
                die();
                //die("Gracias, su mensaje se envio correctamente.");
@@ -45,7 +48,7 @@
 
             } else {
                 echo "<script>alert('!Error,Por favor intente de nuevo ¡Gracias!.');</script>";
-                header("refresh:0;http://www.virgenmorena.com.mialias.net/solicitud.php" )
+                header("refresh:0;http://www.parquevirgenmorena.com/solicitud.php" )
                //echo  $error = '<div class="alert alert-danger" role="alert"><p><strong>Mensaje sin enviar.Prueba nuevamente,disculpa las molestias.</div>';  
             } 
           
