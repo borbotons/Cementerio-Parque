@@ -55,7 +55,7 @@ $error = ""; $mensajeExito = "";
 		} 
 	  
 
-?>
+
 
 
 
