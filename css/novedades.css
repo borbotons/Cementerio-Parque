@@ -17,7 +17,9 @@ div.cabeza
 	height: 250px;
 	padding: 20px 0;
 
-	background: #50b204;
+	background-image: url(../img/baner-noticias.jpg);
+	background-size: 100% 60%;
+    background-attachment: fixed;;
 }
 
 .cabeza-texto

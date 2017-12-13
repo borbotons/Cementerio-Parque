@@ -1,35 +1,21 @@
 body
 {
-	margin: 0;
-	padding: 0;
 	font-family: 'Lato';
+	overflow-x: hidden;
 }
 
-div.emergencia
+.hidden
 {
-	background: white;
-
+	display: none;
 }
-
-.top
-{
-	margin-top: 10px;
-}
-
-.top2
-{
-	margin-top: 5px;
-}
-
-
 
 .header
 {
-	height: 600px;
+	height: 500px;
 
-	background-image: url(../img/c.jpg);
+	background-image: url(../img/d.jpg);
 	background-size: 100% 100%;
-    background-attachment: fixed;
+	background-attachment: fixed;
 
 	color: white;
 	padding-top: 50px;
@@ -37,64 +23,61 @@ div.emergencia
 
 .header .izquierda
 {
-	padding-left: 100px;
+	padding-left: 6%;
 }
 
 .header .derecha 
 {
-	padding-top: 150px;
-	padding-left: 300px;
-}
-
-.header h1 
-{
-	margin-top: 50px;
+	padding-top: 20%;
+	padding-left: 20px;
 }
 
 .primero
 {
 	font-family: 'Playfair Display', serif;
-}
-
-hr
-{
-	background: white;
+	font-size: 25px;
 }
 
 .header img
 {
-	width: 450px;
+	width: 240px;
+	position: absolute;
+	left: 18px;
 }
+
+/*  Noticias     -------------------------------------------*/
 
 .noticias
 {
-	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.4;
-	min-height: 600px;
-	padding-top: 50px;
-	padding-bottom: 30px;
+	padding-top:5%;
+	padding-bottom: 10%;
 }
 
 .noti_titulo
 {
-	font-size: 30px;
+	font-size: 20px;
 	color: #50b204;
 	font-family: 'Lato';
-	padding-bottom: 30px;
+	padding-top: 6%;
+	padding-bottom: 10%;
+	text-align: center;
+
 }
 
 .card
 {
-	width: 350px;
-	height: 450px;
+	width: 250px;
+	height: 400px;
 	background-color: #fff;
 		box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
 	transition: box-shadow 0.3s;
 	overflow: hidden;
+	margin-bottom: 3%;
 }
 
-/*#ef5a31 naranja fuerte*/
+
 .card:hover
 {
 		box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
@@ -196,7 +179,7 @@ hr
 	margin: 0;
 	padding: 0 0 10px 0;
 	
-	font-size: 22px;
+	font-size: 14px;
 	color: #000;
 	font-weight: bold;
 }
@@ -207,23 +190,18 @@ hr
 	padding: 0 0 10px 0;
 
 	color: #ef5a31;
-	font-size: 19px;
+	font-size: 12px;
 }
 
 .card__description
 {
 	color: #666c74;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 27px;
 
 	opacity: 0;
 	transition: opacity 0.3s;
 	transition-delay: 0.1s;
-}
-
-.card:hover .card__description
-{
-	opacity: 1;
 }
 
 .card__footer
@@ -233,44 +211,37 @@ hr
 	left: 20px;
 	right: 20px;
 
-	font-size: 11px;
+	font-size: 10px;
 	color: #a3a9a8;
 }
 
-.vermas
-{
-	padding-top: 40px;
-	padding-bottom: 10px;
-}
 
-.back-text
-{
-	display: inline-block;
-	font-size: 125px;
-	font-weight: 900px;
-	left: -50px;
-	bottom: -30px;
-	opacity: 0.1;
-	color: white;
-}
+/* frase  ---------------------------------------*/
 
 .frase1
 {
 	min-height: 200px;
 	background-color: #50b204;
 	text-align: center;
-	padding-top: 30px;  
-	padding-bottom: 30px; 
+	padding-top: 8%;  
+	padding-bottom: 8%; 
 	color: white;
 	font-family: 'Lato Hairline';
+	
 }
+
+.frase1 h1
+{
+	font-size: 20px;
+}
+
+/*  Listado servicios   --------------------------*/
 
 div.servicios
 {
 	min-height: 500px;
-	/*background: red;*/
-	padding: 50px 0 50px;
 	text-align: center;
+	padding-bottom: 8%;
 }
 
 .servicios h2, .servicios h4
@@ -282,75 +253,109 @@ div.servicios
 .servicios p
 {
 	font-size: 14px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
+	font-style: italic;
+	padding-left: 1%;
+	padding-right: 1%;
 }
 
 .servicios i 
 {
-	height: 100px;
-	width: 100px;
-	font-size: 50px;
-	padding: 25px 20px;
+	height: 60px;
+	width: 60px;
+	font-size: 30px;
+	padding: 15px 15px;
 	border-radius: 50px;
 	background-color: #76b71f;
 	color: white;
 }
 
+
+/*    Clientes asociados   -------------------------------------*/
+
 .clientes
 {
-	height: 400px;
+	height: 350px;
 	/*width: 100%;*/
 	background: url("../img/baner2.jpg");
 	background-size: 100% 100%;
-    background-attachment: fixed;
+	background-attachment: fixed;
 	
 }
 
 .e1
 {
-	padding-top: 25px;
+	padding-top: 5%;
+}
+
+.e1 img
+{
+	width: 220px;
+	margin-bottom: 5%;
 }
 
 .clientes h3
 {
 	color: white;
 	font-family: 'Lato Hairline';
-	font-size: 50px;
+	font-size: 20px;
 }
 
 .e2
 {
-	padding-top: 60px;
+	padding-top: 30px;
+}
+
+.e2 img 
+{
+	width: 80px;
+	margin-left: 30%;
 }
 
 .dato-apunca
 {
-	
 	color: white;
-	padding-left: 40px;
 	padding-top: 20px;
 }
+
+.dato-apunca h4 
+{
+	font-size: 14px;
+	text-align: center;
+}
+
+
+/* Acerca del parque   ----------------------------------------*/
+
 
 div.parque
 {
 	min-height: 500px;
 	background: #50b204;
-	padding-top: 0px;
-	padding-bottom: 30px;
+	padding-top: 2%;
+	padding-bottom: 5%;
 }
 
-.parque h1
+.parque h3
 {
-	font-family: 'Lato Hairline';
-	font-size: 60px;
+	font-size: 20px;
+	color: white;
+}
+
+.back-text
+{
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 900px;
+	left: -50px;
+	bottom: -30px;
+	opacity: 0.1;
 	color: white;
 }
 
 .contador
 {
-	font-family: 'Lato Hairline';
-	font-size: 160px;
-	color: white;
+	display: none;
 }
 
 .derecha
@@ -360,6 +365,1144 @@ div.parque
 
 .detalle
 {
-	padding-top: 60px;
+	padding-top: 5%;
 }
 
+/* smart grande */
+@media screen and (min-width: 480px){
+	div.emergencia
+	{
+		background: white;
+	}
+	
+	.top
+	{
+		margin-top: 10px;
+	}
+	
+	.top2
+	{
+		margin-top: 5px;
+	}
+
+	
+
+	.header
+	{
+		height: 400px;
+	
+		background-image: url(../img/d.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	
+		color: white;
+		padding-top: 50px;
+	}
+	
+	.header .izquierda
+	{
+		padding-left: 6%;
+	}
+	
+	.header .derecha 
+	{
+		padding-top: 20%;
+		padding-left: 20px;
+	}
+	
+	.primero
+	{
+		font-family: 'Playfair Display', serif;
+		font-size: 25px;
+	}
+	
+	.header img
+	{
+		width: 300px;
+		position: absolute;
+		left: 18px;
+	}
+	
+	/*  Noticias     -------------------------------------------*/
+	
+	.noticias
+	{
+		font-size: 16px;
+		line-height: 1.4;
+		padding-top:5%;
+		padding-bottom: 10%;
+	}
+	
+	.noti_titulo
+	{
+		font-size: 20px;
+		color: #50b204;
+		font-family: 'Lato';
+		padding-top: 6%;
+		padding-bottom: 10%;
+		text-align: center;
+	
+	}
+	
+	.card
+	{
+		width: 250px;
+		height: 400px;
+		background-color: #fff;
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+		transition: box-shadow 0.3s;
+		overflow: hidden;
+		margin-bottom: 3%;
+	}
+	
+	
+	.card:hover
+	{
+			box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+	
+	}
+	
+	.card:hover .card__thumb
+	{
+		height: 90px;
+	}
+	
+	.card__date
+	{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+	
+		background-color: #f1c40f; /*ef5a31*/
+		border-radius: 50%;
+	
+		color: white;
+		text-align: center;
+		line-height: 13px;
+		font-weight: bold;
+	}
+	
+	.card__date__day
+	{
+		display: block;
+		font-size: 15px;
+	}
+	
+	.card__date__month
+	{
+		display: block;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+	
+	.card__thumb
+	{
+		height: 235px;
+		overflow: hidden;
+		background-color: #000;
+	
+		transition: height 0.3s;
+	}
+	
+	.card__thumb img
+	{
+		display: block;
+		opacity: 1;
+		transition: opacity 0.3s, transform 0.3s;
+		transform: scale(1);
+	}
+	
+	.card:hover .card__thumb img
+	{
+		opacity: 0.6;
+		transform: scale(1.2);
+	}
+	
+	.card__body
+	{
+		position: relative;
+		padding: 20px;
+		height: 185px;
+		transition: height 0.3s;
+	}
+	
+	.card:hover .card__body
+	{
+		height: 185px + 145px;
+	}
+	
+	.card__category
+	{
+		position: absolute;
+		
+		height: 25px;
+		left: 0;
+		top: -25px;
+		padding: 0 15px;
+	
+		background-color: #ef5a31; 
+	
+		color: white;
+		font-size: 11px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+	
+	.card__title
+	{
+		margin: 0;
+		padding: 0 0 10px 0;
+		
+		font-size: 14px;
+		color: #000;
+		font-weight: bold;
+	}
+	
+	.card__subtitle
+	{
+		margin: 0;
+		padding: 0 0 10px 0;
+	
+		color: #ef5a31;
+		font-size: 12px;
+	}
+	
+	.card__description
+	{
+		color: #666c74;
+		font-size: 12px;
+		line-height: 27px;
+	
+		opacity: 0;
+		transition: opacity 0.3s;
+		transition-delay: 0.1s;
+	}
+	
+	.card__footer
+	{
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+	
+		font-size: 10px;
+		color: #a3a9a8;
+	}
+	
+	
+	/* frase  ---------------------------------------*/
+	
+	.frase1
+	{
+		min-height: 200px;
+		background-color: #50b204;
+		text-align: center;
+		padding-top: 8%;  
+		padding-bottom: 8%; 
+		color: white;
+		font-family: 'Lato Hairline';
+		
+	}
+	
+	.frase1 h1
+	{
+		font-size: 30px;
+	}
+	
+	/*  Listado servicios   --------------------------*/
+	
+	div.servicios
+	{
+		min-height: 500px;
+		text-align: center;
+		padding-bottom: 8%;
+	}
+	
+	.servicios h2, .servicios h4
+	{
+		color: #76b71f; 
+		margin: 20px 0 20px;
+	}
+	
+	.servicios p
+	{
+		font-size: 14px;
+		padding-bottom: 30px;
+		font-style: italic;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	
+	.servicios i 
+	{
+		height: 60px;
+		width: 60px;
+		font-size: 30px;
+		padding: 15px 15px;
+		border-radius: 50px;
+		background-color: #76b71f;
+		color: white;
+	}
+
+	
+	/*    Clientes asociados   -------------------------------------*/
+	
+	.clientes
+	{
+		height: 400px;
+
+		background: url("../img/baner2.jpg");
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		
+	}
+	
+	.e1
+	{
+		padding-top: 5%;
+	}
+	
+	.e1 img
+	{
+		width: 280px;
+		margin-bottom: 5%;
+		margin-left: 11%;
+	}
+	
+	.clientes h3
+	{
+		color: white;
+		font-family: 'Lato Hairline';
+		font-size: 30px;
+	}
+	
+	.e2
+	{
+		padding-top: 30px;
+	}
+	
+	.e2 img 
+	{
+		width: 80px;
+		margin-left: 160px;
+	}
+	
+	.dato-apunca
+	{
+		color: white;
+		padding-top: 20px;
+	}
+	
+	.dato-apunca h4 
+	{
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	
+	/* Acerca del parque   ----------------------------------------*/
+	
+	
+	div.parque
+	{
+		min-height: 500px;
+		background: #50b204;
+		padding-top: 2%;
+		padding-bottom: 5%;
+	}
+	
+	.parque h3
+	{
+		font-size: 20px;
+		color: white;
+	}
+	
+	.back-text
+	{
+		display: inline-block;
+		font-size: 50px;
+		font-weight: 900px;
+		left: -50px;
+		bottom: -30px;
+		opacity: 0.1;
+		color: white;
+	}
+	
+	.contador
+	{
+		display: none;
+	}
+	
+	.derecha
+	{
+		text-align: right;
+	}
+	
+	.detalle
+	{
+		padding-top: 5%;
+	}
+}
+
+/* tablet */
+@media screen and (min-width: 767px){
+	.header
+	{
+		height: 400px;
+	
+		background-image: url(../img/c.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	
+		color: white;
+		padding-top: 50px;
+	}
+	
+	.header .izquierda
+	{
+		padding-left: 6%;
+	}
+	
+	.header .derecha 
+	{
+		padding-top: 15%;
+	}
+	
+	.primero
+	{
+		font-family: 'Playfair Display', serif;
+		font-size: 25px;
+	}
+	
+	.header img
+	{
+		width: 300px;
+		position: absolute;
+		left: 130px;
+	}
+	
+	/*  Noticias     -------------------------------------------*/
+	
+
+	.noticias
+	{
+		font-size: 16px;
+		line-height: 1.4;
+		padding-top:5%;
+		padding-bottom: 10%;
+	}
+	
+	.noti_titulo
+	{
+		font-size: 20px;
+		color: #50b204;
+		font-family: 'Lato';
+		padding-top: 6%;
+		padding-bottom: 10%;
+		text-align: center;
+	
+	}
+	
+	.card
+	{
+		width: 250px;
+		height: 400px;
+		background-color: #fff;
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+		transition: box-shadow 0.3s;
+		overflow: hidden;
+		margin-bottom: 3%;
+	}
+	
+	
+	.card:hover
+	{
+			box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+	
+	}
+	
+	.card:hover .card__thumb
+	{
+		height: 90px;
+	}
+	
+	.card__date
+	{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+	
+		background-color: #f1c40f; /*ef5a31*/
+		border-radius: 50%;
+	
+		color: white;
+		text-align: center;
+		line-height: 13px;
+		font-weight: bold;
+	}
+	
+	.card__date__day
+	{
+		display: block;
+		font-size: 15px;
+	}
+	
+	.card__date__month
+	{
+		display: block;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+	
+	.card__thumb
+	{
+		height: 235px;
+		overflow: hidden;
+		background-color: #000;
+	
+		transition: height 0.3s;
+	}
+	
+	.card__thumb img
+	{
+		display: block;
+		opacity: 1;
+		transition: opacity 0.3s, transform 0.3s;
+		transform: scale(1);
+	}
+	
+	.card:hover .card__thumb img
+	{
+		opacity: 0.6;
+		transform: scale(1.2);
+	}
+	
+	.card__body
+	{
+		position: relative;
+		padding: 20px;
+		height: 185px;
+		transition: height 0.3s;
+	}
+	
+	.card:hover .card__body
+	{
+		height: 185px + 145px;
+	}
+	
+	.card__category
+	{
+		position: absolute;
+		
+		height: 25px;
+		left: 0;
+		top: -25px;
+		padding: 0 15px;
+	
+		background-color: #ef5a31; 
+	
+		color: white;
+		font-size: 11px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+	
+	.card__title
+	{
+		margin: 0;
+		padding: 0 0 10px 0;
+		
+		font-size: 14px;
+		color: #000;
+		font-weight: bold;
+	}
+	
+	.card__subtitle
+	{
+		margin: 0;
+		padding: 0 0 10px 0;
+	
+		color: #ef5a31;
+		font-size: 12px;
+	}
+	
+	.card__description
+	{
+		color: #666c74;
+		font-size: 12px;
+		line-height: 27px;
+	
+		opacity: 0;
+		transition: opacity 0.3s;
+		transition-delay: 0.1s;
+	}
+	
+	.card__footer
+	{
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+	
+		font-size: 10px;
+		color: #a3a9a8;
+	}
+	
+	
+	/* frase  ---------------------------------------*/
+	
+	.frase1
+	{
+		min-height: 200px;
+		background-color: #50b204;
+		text-align: center;
+		padding-top: 8%;  
+		padding-bottom: 8%; 
+		color: white;
+		font-family: 'Lato Hairline';
+		
+	}
+	
+	.frase1 h1
+	{
+		font-size: 30px;
+	}
+	
+	/*  Listado servicios   --------------------------*/
+	
+	div.servicios
+	{
+		min-height: 500px;
+		text-align: center;
+		padding-bottom: 8%;
+	}
+	
+	.servicios h2, .servicios h4
+	{
+		color: #76b71f; 
+		margin: 20px 0 20px;
+	}
+	
+	.servicios p
+	{
+		font-size: 14px;
+		padding-bottom: 30px;
+		font-style: italic;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+	
+	.servicios i 
+	{
+		height: 60px;
+		width: 60px;
+		font-size: 30px;
+		padding: 15px 15px;
+		border-radius: 50px;
+		background-color: #76b71f;
+		color: white;
+	}
+
+	
+	/*    Clientes asociados   -------------------------------------*/
+	
+	.clientes
+	{
+		height: 350px;
+
+		background: url("../img/baner2.jpg");
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		
+	}
+	
+	.e1
+	{
+		padding-top: 5%;
+	}
+	
+	.e1 img
+	{
+		width: 280px;
+		margin-bottom: 5%;
+		margin-left: 11%;
+	}
+	
+	.clientes h3
+	{
+		color: white;
+		font-family: 'Lato Hairline';
+		font-size: 35px;
+	}
+	
+	.e2
+	{
+		padding-top: 30px;
+	}
+	
+	.e2 img 
+	{
+		width: 80px;
+		
+	}
+	
+	.dato-apunca
+	{
+		color: white;
+		padding-top: 80px;
+	}
+	
+	.dato-apunca h4 
+	{
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	
+	/* Acerca del parque   ----------------------------------------*/
+	
+	
+	div.parque
+	{
+		min-height: 500px;
+		background: #50b204;
+		padding-top: 2%;
+		padding-bottom: 5%;
+	}
+	
+	.parque h3
+	{
+		font-size: 20px;
+		color: white;
+	}
+	
+	.back-text
+	{
+		display: inline-block;
+		font-size: 50px;
+		font-weight: 900px;
+		left: -50px;
+		bottom: -30px;
+		opacity: 0.1;
+		color: white;
+	}
+	
+	.contador
+	{
+		display: none;
+	}
+	
+	.derecha
+	{
+		text-align: right;
+	}
+	
+	.detalle
+	{
+		padding-top: 5%;
+	}
+}
+
+@media screen and (min-width: 950px){
+	
+	
+	div.emergencia
+	{
+		background: white;
+	
+	}
+	
+	.top
+	{
+		margin-top: 10px;
+	}
+	
+	.top2
+	{
+		margin-top: 5px;
+	}
+	
+	
+	
+	.header
+	{
+		height: 600px;
+	
+		background-image: url(../img/c.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	
+		color: white;
+		padding-top: 50px;
+	}
+	
+	.header .izquierda
+	{
+		padding-left: 100px;
+	}
+	
+	.header .derecha 
+	{
+		padding-top: 150px;
+		padding-left: 300px;
+	}
+	
+	.header h1 
+	{
+		margin-top: 50px;
+	}
+	
+	.primero
+	{
+		font-family: 'Playfair Display', serif;
+		font-size: 40px;
+	}
+	
+	.header img
+	{
+		width: 450px;
+		position: absolute;
+		left: 300px;
+	}
+	
+	.noticias
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		line-height: 1.4;
+		min-height: 600px;
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	
+	.noti_titulo
+	{
+		font-size: 30px;
+		color: #50b204;
+		font-family: 'Lato';
+		padding-bottom: 30px;
+		padding-top: 0;
+	}
+	
+	.card
+	{
+		width: 350px;
+		height: 450px;
+		background-color: #fff;
+			box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+		transition: box-shadow 0.3s;
+		overflow: hidden;
+	}
+	
+	/*#ef5a31 naranja fuerte*/
+	.card:hover
+	{
+			box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+	
+	}
+	
+	.card:hover .card__thumb
+	{
+		height: 90px;
+	}
+	
+	.card__date
+	{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+	
+		background-color: #f1c40f; /*ef5a31*/
+		border-radius: 50%;
+	
+		color: white;
+		text-align: center;
+		line-height: 13px;
+		font-weight: bold;
+	}
+	
+	.card__date__day
+	{
+		display: block;
+		font-size: 15px;
+	}
+	
+	.card__date__month
+	{
+		display: block;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+	
+	.card__thumb
+	{
+		height: 235px;
+		overflow: hidden;
+		background-color: #000;
+	
+		transition: height 0.3s;
+	}
+	
+	.card__thumb img
+	{
+		display: block;
+		opacity: 1;
+		transition: opacity 0.3s, transform 0.3s;
+		transform: scale(1);
+	}
+	
+	.card:hover .card__thumb img
+	{
+		opacity: 0.6;
+		transform: scale(1.2);
+	}
+	
+	.card__body
+	{
+		position: relative;
+		padding: 20px;
+		height: 185px;
+		transition: height 0.3s;
+	}
+	
+	.card:hover .card__body
+	{
+		height: 185px + 145px;
+	}
+	
+	.card__category
+	{
+		position: absolute;
+		
+		height: 25px;
+		left: 0;
+		top: -25px;
+		padding: 0 15px;
+	
+		background-color: #ef5a31; 
+	
+		color: white;
+		font-size: 11px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+	
+	.card__title
+	{
+		margin: 0;
+		padding: 0 0 10px 0;
+		
+		font-size: 22px;
+		color: #000;
+		font-weight: bold;
+	}
+	
+	.card__subtitle
+	{
+		margin: 0;
+		padding: 0 0 10px 0;
+	
+		color: #ef5a31;
+		font-size: 19px;
+	}
+	
+	.card__description
+	{
+		color: #666c74;
+		font-size: 14px;
+		line-height: 27px;
+	
+		opacity: 0;
+		transition: opacity 0.3s;
+		transition-delay: 0.1s;
+	}
+	
+	.card:hover .card__description
+	{
+		opacity: 1;
+	}
+	
+	.card__footer
+	{
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+	
+		font-size: 11px;
+		color: #a3a9a8;
+	}
+	
+	.vermas
+	{
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}
+	
+	.back-text
+	{
+		display: inline-block;
+		font-size: 125px;
+		font-weight: 900px;
+		left: -50px;
+		bottom: -30px;
+		opacity: 0.1;
+		color: white;
+	}
+	
+	.frase1
+	{
+		min-height: 200px;
+		background-color: #50b204;
+		text-align: center;
+		padding-top: 30px;  
+		padding-bottom: 30px; 
+		color: white;
+		font-family: 'Lato Hairline';
+	}
+
+	.frase1 h1
+	{
+		font-size: 40px;
+	}
+	
+	div.servicios
+	{
+		min-height: 500px;
+		padding: 50px 0 50px;
+		text-align: center;
+	}
+	
+	.servicios h2, .servicios h4
+	{
+		color: #76b71f; 
+		margin: 20px 0 20px;
+	}
+	
+	.servicios p
+	{
+		font-size: 14px;
+		padding-bottom: 40px;
+	}
+	
+	.servicios i 
+	{
+		height: 100px;
+		width: 100px;
+		font-size: 50px;
+		padding: 25px 20px;
+		border-radius: 50px;
+		background-color: #76b71f;
+		color: white;
+	}
+	
+	.clientes
+	{
+		height: 400px;
+		/*width: 100%;*/
+		background: url("../img/baner2.jpg");
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		
+	}
+	
+	.e1
+	{
+		padding-top: 25px;
+	}
+	
+	.clientes h3
+	{
+		color: white;
+		font-family: 'Lato Hairline';
+		font-size: 50px;
+	}
+	
+	.e2
+	{
+		padding-top: 60px;
+	}
+	
+	.dato-apunca
+	{
+		
+		color: white;
+	
+		padding-top: 20px;
+	}
+
+
+	.e1 img
+	{
+		width: 350px;
+		margin-bottom: 5%;
+	}
+
+	.e2 img 
+	{
+		width: 90px;
+		margin-left: 70px;
+	}
+	
+	.clientes h3
+	{
+		color: white;
+		font-family: 'Lato Hairline';
+		font-size: 40px;
+	}
+
+	.dato-apunca h4 
+	{
+		font-size: 20px;
+		margin-left: 20px;
+	}
+	
+	div.parque
+	{
+		min-height: 500px;
+		background: #50b204;
+		padding-top: 0px;
+		padding-bottom: 30px;
+	}
+	
+	.parque h1
+	{
+		font-family: 'Lato Hairline';
+		font-size: 60px;
+		color: white;
+	}
+	
+	.contador
+	{
+		font-family: 'Lato Hairline';
+		font-size: 160px;
+		color: white;
+
+		display: inline;
+	}
+	
+	.derecha
+	{
+		text-align: right;
+	}
+	
+	.detalle
+	{
+		padding-top: 60px;
+	}
+
+
+    
+}
