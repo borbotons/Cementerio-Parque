@@ -8,8 +8,8 @@
             $domicilio = $_POST['domicilio'];
             $tar = $_POST['tar'];
             $tarvenc = $_POST['venmes'];
-            $tarvenc2 = $_POST['venanio'];
-            $servicio  =  $_POST['planselec'];
+            $tarvenc2 = $_POST['vencanio'];
+            $servicio  =  $_POST['planselec2'];
             $mensajeC = "Naranja/Nevada";
             $telefono = $_POST['tel'];
 
@@ -38,7 +38,7 @@
             if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
                 
                header( "refresh:0;http://www.parquevirgenmorena.com/" );
-               echo "<script>alert('Correo enviado, ¡Gracias!.');</script>";
+               echo "<script>alert('Correo enviado,en breve responderemos su solicitud. ¡Gracias!.');</script>";
                die();
                //die("Gracias, su mensaje se envio correctamente.");
               
@@ -48,7 +48,7 @@
 
             } else {
                 echo "<script>alert('!Error,Por favor intente de nuevo ¡Gracias!.');</script>";
-                header("refresh:0;http://www.parquevirgenmorena.com/solicitud.php" )
+                header("refresh:0;http://www.parquevirgenmorena.com/solicitud.php" );
                //echo  $error = '<div class="alert alert-danger" role="alert"><p><strong>Mensaje sin enviar.Prueba nuevamente,disculpa las molestias.</div>';  
             } 
           

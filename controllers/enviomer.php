@@ -40,7 +40,7 @@ $error = ""; $mensajeExito = "";
 		//Mensajes de Exito o Fallo
 		if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
 			
-		   header( "refresh:0";hos );
+		   header( "refresh:0;hos" );
 		   die();
 		   //die("Gracias, su mensaje se envio correctamente.");
 		  
@@ -50,7 +50,7 @@ $error = ""; $mensajeExito = "";
 
 		} else {
 			echo "<script>alert('!Error,Por favor intente de nuevo ¡Gracias!.');</script>";
-			header("refresh:0;http://www.parquevirgenmorena.com/solicitud.php" )
+			header("refresh:0;http://www.parquevirgenmorena.com/solicitud.php" );
 		   //echo  $error = '<div class="alert alert-danger" role="alert"><p><strong>Mensaje sin enviar.Prueba nuevamente,disculpa las molestias.</div>';  
 		} 
 	  

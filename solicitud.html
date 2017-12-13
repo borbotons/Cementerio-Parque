@@ -171,6 +171,10 @@
 									<p class="help-block"></p>
 							</div>
 							
+							<div class="form-group row">
+								<label class="col-2 col-form-label">Telefono</label>
+								<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
+							</div>
 
 							
 
@@ -234,9 +238,15 @@
 									<label class="col-2 col-form-label">Domicilio</label>
 									
 								
-									<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" >
+									<input type="text" minlength="8" class="form-control col-10"  required name="domicilio" placeholder="Ingrese su domicilio" >
 									
 							</div>	
+
+							<div class="form-group row"  style="display:none;">	
+								<label class="col-2 col-form-label">Plan Elegido</label>
+								<input type="text" minlength="8" class="form-control col-10" id="holas2" required name="planselec2" placeholder="PGrupo Familiar Base" value="PGrupo Familiar Base" readonly >
+							</div>
+
 
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="./terminos-condiciones.html" >Terminos y Condiciones </a></label><br>
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required> Autorizo que los pagos a Débitos Automáticos de Virgen Morena S.R.L. se debiten automáticamente de mi tarjeta de crédito.<br>
@@ -266,7 +276,7 @@
 
 							<div class="form-group row">	
 								<label class="col-2 col-form-label">Domicilio</label>
-								<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" >
+								<input type="text" minlength="8" class="form-control col-10"  required name="domicilio" placeholder="Ingrese su domicilio" >
 							</div>	
 
 							<div class="form-group row">
@@ -276,12 +286,12 @@
 							
 							<div class="form-group row" style="display:none;" >	
 									<label class="col-2 col-form-label">Plan Elegido</label>
-									<input type="text" minlength="8" class="form-control col-10" id="holas" required name="planselec" placeholder="PGrupo Familiar Base" value="PGrupo Familiar Base" disabled >
+									<input type="text" minlength="8" class="form-control col-10" id="holas" required name="planselec" placeholder="PGrupo Familiar Base" value="PGrupo Familiar Base" readonly >
 							</div>
 
 							<div class="form-group row" style="display:none;">	
 								<label class="col-2 col-form-label">Plan Elegidoparaenviar</label>
-								<input type="text" minlength="8" class="form-control col-10" id="hos" required name="hos" placeholder="PGrupo Familiad" value="PGrupo Familiar" disabled >
+								<input type="text" minlength="8" class="form-control col-10" id="hos" required name="hos" placeholder="PGrupo Familiad" value="http://mpago.la/a9Qp" readonly >
 							</div>
 
 							

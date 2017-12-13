@@ -24,36 +24,48 @@ function operacion(boton){
 			valor4="PGrupo Familiar Premium Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/a9Qp';
 		}
 		if(select_b==1){
 			valor4="PGrupo Familiar Premium +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/FQ9a';
 		}
 		if(select_b==2){
 			valor4="PGrupo Familiar Premium +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/WxQT';
 		}
 		if(select_b==3){
 			valor4="PGrupo Familiar Premium +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/V2i6';
 		}
 		if(select_b==4){
 			valor4="PGrupo Familiar Premium +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/svG6';
 		}
 		if(select_b==5){
 			valor4="PGrupo Familiar Premium +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value= 'http://mpago.la/IGTL';
 		}
 	
@@ -74,36 +86,48 @@ function operacion(boton){
 			valor4="PGrupo Familiar Directo Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/2KpR';
 		}
 		if(select_b==1){
 			valor4="PGrupo Familiar Directo +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/qc4C';
 		}
 		if(select_b==2){
 			valor4="PGrupo Familiar Directo +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/vUd2';
 		}
 		if(select_b==3){
 			valor4="PGrupo Familiar Directo +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/tNXT';
 		}
 		if(select_b==4){
 			valor4="PGrupo Familiar Directo +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/nYDV';
 		}
 		if(select_b==5){
 			valor4="PGrupo Familiar Directo +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/9oGK';
 		}
 	
@@ -122,36 +146,48 @@ function operacion(boton){
 			valor4="PCementerio Parque Premium Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/YXYf';
 		}
 		if(select_b==1){
 			valor4="PCementerio Parque Premiun +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/9dn2';
 		}
 		if(select_b==2){
 			valor4="PCementerio Parque Premium +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/E6At';
 		}
 		if(select_b==3){
 			valor4="PCementerio Parque Premium +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/5kLf';
 		}
 		if(select_b==4){
 			valor4="PCementerio Parque Premium +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/XlKR';
 		}
 		if(select_b==5){
 			valor4="PCementerio Parque Premium +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/O2v8';
 		}
 	
@@ -170,36 +206,48 @@ function operacion(boton){
 			valor4="PCementerio Parque  Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/8RsT';
 		}
 		if(select_b==1){
 			valor4="PCementerio Parque  +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/3W38';
 		}
 		if(select_b==2){
 			valor4="PCementerio Parque  +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/hIh8';
 		}
 		if(select_b==3){
 			valor4="PCementerio Parque  +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/JelQ';
 		}
 		if(select_b==4){
 			valor4="PCementerio Parque  +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/X4u';
 		}
 		if(select_b==5){
 			valor4="PCementerio Parque  +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/O9kN';
 		}
 	
@@ -217,36 +265,48 @@ function operacion(boton){
 			valor4="Servicio Funebre Premium Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/xUEX';
 		}
 		if(select_b==1){
 			valor4="Servicio Funebre Premium +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/fJqU';
 		}
 		if(select_b==2){
 			valor4="Servicio Funebre Premium +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/2zZk';
 		}
 		if(select_b==3){
 			valor4="Servicio Funebre Premium +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/aIrG';
 		}
 		if(select_b==4){
 			valor4="Servicio Funebre Premium +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/hM3x';
 		}
 		if(select_b==5){
 			valor4="Servicio Funebre Premium +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/hUXb';
 		}
 	
@@ -264,36 +324,48 @@ function operacion(boton){
 			valor4="Servicio Funebre Base";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/FEBA';
 		}
 		if(select_b==1){
 			valor4="Servicio Funebre +1";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/J0jD';
 		}
 		if(select_b==2){
 			valor4="Servicio Funebre +2";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/MJcN';
 		}
 		if(select_b==3){
 			valor4="Servicio Funebre +3";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/USeN';
 		}
 		if(select_b==4){
 			valor4="Servicio Funebre +4";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/qhq1';
 		}
 		if(select_b==5){
 			valor4="Servicio Funebre +5";
 			document.getElementById('holas').placeholder = valor4;
 			document.getElementById('holas').value =valor4;
+			document.getElementById('holas2').placeholder = valor4;
+			document.getElementById('holas2').value =valor4;
 			document.contacto2.hos.value='http://mpago.la/zrAI';
 		}
 	
