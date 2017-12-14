@@ -2,6 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 div.emergencia
@@ -14,11 +15,11 @@ div.emergencia
 div.cabeza
 {
 	width: 100%;
-	height: 250px;
+	height: 200px;
 	padding: 20px 0;
 
 	background-image: url(../img/baner-parque2.jpg);
-	background-size: 100% 60%;
+	background-size: 100% 70%;
     background-attachment: fixed;
 }
 
@@ -31,36 +32,58 @@ div.cabeza
 .cabeza-texto h1
 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 80px; 
-	line-height: 100px;
+	font-size: 40px; 
+	line-height: 45px;
 }
 
 .cabeza-texto p
 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 div.parque
 {
 	min-height: 500px;
 	background: #50b204;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 2%;
+	padding-bottom: 5%;
 }
 
-.parque h1
+.parque h3
 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 60px;
+	font-size: 20px;
 	color: white;
-	opacity: 0.3;
+}
+
+.back-text
+{
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 900px;
+	left: -50px;
+	bottom: -30px;
+	opacity: 0.1;
+	color: white;
 }
 
 .contador
 {
-	font-family: 'Lato Hairline';
-	font-size: 160px;
-	color: white;
+	display: none;
+}
+
+.derecha
+{
+	text-align: right;
+}
+
+.detalle
+{
+	padding-top: 5%;
+}
+
+.contador
+{
+	display: none;
 }
 
 .pad
@@ -159,9 +182,20 @@ div.parque
 	text-align: left;
 }
 
+.plano img 
+{
+	width: 95%;
+	height: 95%;
+}
+
 .caracteristicas
 {
 	padding-top: 20px;
+}
+
+.caracteristicas img
+{
+	width: 250px;
 }
 
 .caracteristicas-2
@@ -173,9 +207,205 @@ div.parque
 {
 	color: #50b204;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
 }
 
 .estructura-info
 {
 	padding-top: 30px;
+	padding-left: 5%;
+}
+
+
+
+
+@media screen and (min-width: 480px){
+
+
+}
+
+
+@media screen and (min-width: 767px){
+
+}
+
+@media screen and (min-width: 950px){
+
+    div.emergencia
+	{
+		height: 50px;
+		background: white;
+		padding-top: 15px;
+	}
+	
+	div.cabeza
+	{
+		width: 100%;
+		height: 250px;
+		padding: 20px 0;
+	
+		background-image: url(../img/baner-parque2.jpg);
+		background-size: 100% 60%;
+		background-attachment: fixed;
+	}
+	
+	.cabeza-texto
+	{
+		color: white;
+		text-align: left;
+	}
+	
+	.cabeza-texto h1
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 80px; 
+		line-height: 100px;
+	}
+	
+	.cabeza-texto p
+	{
+		font-size: 20px;
+	}
+	
+	div.parque
+	{
+		min-height: 500px;
+		background: #50b204;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.parque h1
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 60px;
+		color: white;
+		opacity: 0.3;
+	}
+	
+	.contador
+	{
+		font-family: 'Lato Hairline';
+		font-size: 160px;
+		color: white;
+
+		display: inline;
+	}
+	
+	.pad
+	{
+		padding-right: 30px;
+	}
+	
+	.info-cumplimos
+	{
+		background: #50b204;
+		padding-bottom: 20px;
+	}
+	
+	.info-cumplimos p
+	{
+		font-size: 17px;
+	}
+	
+	.cumplimos
+	{
+		padding-top: 15px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+	
+	.blanco
+	{
+		color: white;
+	}
+	
+	.numero
+	{
+		text-align: right;
+	}
+	
+	.numero h3
+	{
+		color: white;
+	}
+	
+	.detalle
+	{
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
+	
+	.detalle-galeria
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	.acerca
+	{
+		min-height: 300px;
+	}
+	
+	.info
+	{
+		padding-top: 30px;
+		padding-bottom: 50px;
+		background-color: white;
+	}
+	
+	.info-logo img
+	{
+		width: 40%;
+		height: 40%;
+	}
+	
+	.info-mapa
+	{
+		padding-top: 30px;
+	}
+	
+	.info-mapa img
+	{
+		width: 75%;
+		height: 75%;
+	}
+	
+	.contador-verde
+	{
+		font-family: 'Lato Hairline';
+		font-size: 50px;
+		color: #73b41d;
+	}
+	
+	.texto1
+	{
+		padding-top: 30px;
+		text-align: left;
+	}
+	
+	.caracteristicas
+	{
+		padding-top: 20px;
+	}
+	
+	.caracteristicas-2
+	{
+		padding-top: 25px;
+	}
+	
+	.estructura-info h1
+	{
+		color: #50b204;
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	.estructura-info
+	{
+		padding-top: 30px;
+	}
 }
