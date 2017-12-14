@@ -1159,6 +1159,18 @@ div.parque
 	{
 		margin-top: 50px;
 	}
+
+	.header p 
+	{
+		font-family: 'Lato';
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	.header hr
+	{
+		background: rgba(255, 255, 255, 0.60);
+	}
 	
 	.primero
 	{
