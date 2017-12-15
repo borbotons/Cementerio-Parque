@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-	<title> Contacto | Virgen Morena</title>
-
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+	
+	<!-- Hojas de estilo base    -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	
+	<!-- Hojas de estilo propias    -->
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css"> 
 	<link rel="stylesheet" type="text/css" href="css/footer.css"> 
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	
 	<link rel="icon" href="img/hojita.ico">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	
+	<title> Contacto | Virgen Morena</title>
 </head>
 
 <body onload="initialize()">
-
-	<div class="container-fluid ">
-		<div class="row emergencia align-items-center">
-			<div class="col-lg-5 ">
-				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 / 0383 4746854 </p>
-			</div>
-		</div>
-	</div>
-
 
 	<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #71c837;">
 		<a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"> </a>
@@ -36,7 +34,6 @@
 	
 		<div class="collapse navbar-collapse" id="navbarSite"> 
 			<ul class="navbar-nav mr-auto ml-auto text-center">
-			  
 				  <li class="nav-item">
 					<a class="nav-link" href="./servicios.html">Servicios</a>
 				  </li>
@@ -52,7 +49,6 @@
 				  <li class="nav-item">
 					<a class="nav-link" href="./contacto.html">Contacto</a>
 				  </li>
-			 
 			</ul>
 			<!--
 				<div class="">
@@ -60,7 +56,7 @@
 				</div> -->
 		</div>
 	</nav>
-	
+	<!-- formulario de contacto    -->
 	<div class="container-fluid fondo-verde">
 		<div class="container fondo-fomulario">
 			<div class="row justify-content-center cabeza wow fadeInUp " data-wow-delay="0.2s">
@@ -78,29 +74,24 @@
 					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
 
 						<div class="form-group row">							
-								<label class="col-2 col-form-label">Nombre</label>					
-								<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+							<label class="col-2 col-form-label">Nombre</label>					
+							<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
 						</div>
 
 						<div class="form-group row">
-								<label class="col-2 col-form-label">Correo</label>
-								
-								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
+							<label class="col-2 col-form-label">Correo</label>
+							<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
 						</div>
 
 						<div class="form-group row">
-									<label class="col-2 col-form-label">Telefono</label>
-								
-									<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
+							<label class="col-2 col-form-label">Telefono</label>
+							<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
 						</div>
 
 						<div class="form-group row">	
 							<label class="col-2 col-form-label">Domicilio</label>
-							
-						
 							<input type="text" minlength="8" class="form-control col-10" id="autocomplete" required name="domicilio" placeholder="Ingrese su domicilio" >
-							
-					</div>	
+						</div>	
 
 						<div class="control-group row">
 							<label class="col-2 col-form-label">Asunto</label>
@@ -127,7 +118,6 @@
 								        <input type="checkbox" name="some_field" value="Otros" /> Otros
 								    </label>
 							    </div>
-						
 						</div>
 
 						<div class="control-group">
@@ -142,58 +132,57 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
-
-<div class="footer" >
-	<div class="container footer-data">
-		<div class="row ">
-			<div class="col-lg-5">
-				<h4>Contactanos</h4>
-				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154641745 </p>
-				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> cementerioparquevmorenacat@gmail.com</p>
-				<p><i class="fa fa-home" aria-hidden="true"></i> Rep&uacuteblica 34, San Fernando del Valle de Catamarca</p>
-			</div>
-			<div class="col-lg-3">
-				<h4>Acerca de Nosotros</h4>
-				<p>La empresa</p>
-				<p>Privacidad</p>
-				<p>Terminos y condiciones</p>
-			</div>
-			<div class="col-lg-4">
-				<h4>Sigamos juntos</h4>
-				<i class="social fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/CementerioParqueVirgenMorena/?ref=br_rs" target="_blank">Virgen Morena Fanpage</a>
-				
+	<!-- pie de pagina    -->
+	<div class="footer" >
+		<div class="container footer-data">
+			<div class="row ">
+				<div class="col-lg-5">
+					<h4>Contactanos</h4>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154641745 </p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> cementerioparquevmorenacat@gmail.com</p>
+					<p><i class="fa fa-home" aria-hidden="true"></i> Rep&uacuteblica 34, San Fernando del Valle de Catamarca</p>
+				</div>
+				<div class="col-lg-3">
+					<h4>Acerca de Nosotros</h4>
+					<p>La empresa</p>
+					<p>Privacidad</p>
+					<p>Terminos y condiciones</p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Sigamos juntos</h4>
+					<i class="social fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/CementerioParqueVirgenMorena/?ref=br_rs" target="_blank">Virgen Morena Fanpage</a>
+					
+				</div>
 			</div>
 		</div>
+		<div class="container separador">
+			<hr>
+		</div>
+		<div class="row justify-content-center">
+			<p class="frase-pie">Nuestro compromiso es acompa&ntilde;arte cuando las palabras sobran.</p>
+		</div>
 	</div>
-	<div class="container separador">
-		<hr>
+	<!-- autores en post footer   -->
+	<div class="container-fluid autor">
+		<p> <strong>Copyright &copy; 2017. Desarrollado por Acosta Arga&ntilde;araz - Blanco Olaz.</strong> Todos los derechos reservados. </p>
 	</div>
-	<div class="row justify-content-center">
-		<p class="frase-pie">Nuestro compromiso es acompa&ntilde;arte cuando las palabras sobran.</p>
-	</div>
-</div>
 
-<div class="container-fluid autor">
-	<p> <strong>Copyright &copy; 2017. Desarrollado por Acosta Arga&ntilde;araz - Blanco Olaz.</strong> Todos los derechos reservados. </p>
-</div>
+<!--///////////////////////////////////// scripts /////////////////////////////////////////-->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="js/localizacion.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+		<script src="js/wow.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="js/localizacion.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-	<script src="js/wow.min.js"></script>
-
-	<script src="js/wow.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
-	<script src="js/jqBootstrapValidation.js"></script>
-	<script>
-	 	$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-	</script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script src="js/jqBootstrapValidation.js"></script>
+		<script>
+			$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+		</script>
 
 </body>
-
 </html>

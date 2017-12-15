@@ -1,71 +1,61 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-
-
-	<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
-	<title> Suscripci&oacuten | Virgen Morena</title>
-
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+	
+	<!-- Hojas de estilo base    -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
+	
+	<!-- Hojas de estilo propias    -->
 	<link rel="stylesheet" type="text/css" href="css/solicitud.css">
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css"> 
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link rel="icon" href="img/hojita.ico">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-
+	<link rel="icon" href="img/hojita.ico">
+	
+	<title> Suscripci&oacuten | Virgen Morena</title>
 </head>
 
 <body onload="initialize()">
 
-	<div class="container-fluid ">
-		<div class="row emergencia align-items-center">
-			<div class="col-lg-5 ">
-				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 / 0383 4746854 </p>
-			</div>
-		</div>
-	</div>
-
 	<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #71c837;">
-			<a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"> </a>
-		
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSite" >
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		
-			<div class="collapse navbar-collapse" id="navbarSite"> 
-				<ul class="navbar-nav mr-auto ml-auto text-center">
-				  
-					  <li class="nav-item">
-						<a class="nav-link" href="./servicios.html">Servicios</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="./novedades.html">Novedades</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="./parque.html">El Parque</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="./institucional.html">Institucional</a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="./contacto.html">Contacto</a>
-					  </li>
-				 
-				</ul>
-
-			</div>
-		</nav>
-
-	<div class="md-modal md-effect-9" id="modal-9">    <!-- ventana modal con contenido para el usuario-->
+		<a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"> </a>
+	
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSite" >
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSite"> 
+			<ul class="navbar-nav mr-auto ml-auto text-center">
+					<li class="nav-item">
+					<a class="nav-link" href="./servicios.html">Servicios</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./novedades.html">Novedades</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./parque.html">El Parque</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./institucional.html">Institucional</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="./contacto.html">Contacto</a>
+					</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- ventana modal con contenido para el usuario-->
+	<div class="md-modal md-effect-9" id="modal-9">    
 		<div class="md-content">
 			<h3>Verificaci&oacuten de Subscripci&oacuten</h3>
 			<div>
@@ -79,14 +69,13 @@
 				<button id="btnsubmit" name="submit"  class="md-close">Cerrar y Confirmar</button>
 			</div>
 		</div>
-	</div>     <!-- /ventana modal con contenido para el usuario-->
-
-	<div class="container-fluid fondo-verde">
+	</div>
+	<!-- formulario de suscripcion -->
+	<div	class="container-fluid fondo-verde">
 		<div class="container fondo-fomulario">
 			<div class="row justify-content-center cabeza wow fadeInUp " data-wow-delay="0.2s">
 				<img src="img/titulo.png" alt="">
 			</div>
-			
 			<div class="row subtitulo wow fadeInUp " data-wow-delay="0.3s">
 				<h2> <i class="fa fa-paper-plane" aria-hidden="true"></i> Solicitud de Adherencia</h2>
 			</div>
@@ -94,184 +83,131 @@
 				<p>Por favor complete el siguiente formulario de adherencia, de esta manera se formalizar&aacute
 					 su solicitud y podr&aacute ser examinada por la administraci&oacute;n.</p>
 			</div>
+			<!-- CUERPO formulario de suscripcion -->
 			<div class="row form-style justify-content-center">
 				<div class="col-lg-10 col-md-8 ">
-					
-
-<!--<form name="formularioss" id="formularioss" method="GET"  action="none"> -->
-			<div class="row seccion">
-					<h2>1. Selecci&oacuten del Servicio</h2>
-			</div>
-						<div class="form-group row">
-						<label class="col-2 col-form-label">Servicio</label>
-							<select name="a" class="form-control col-10" onchange="operacion()" id="a">
-										<option value="1">Plan Grupo Familiar Premium</option>
-										<option value="2">Plan Grupo Familiar Directo</option>
-										<option value="3">Plan Cementerio Parque Premiun</option>
-										<option value="4">Plan Cementerio Parque</option>
-										<option value="5">Servicio F&uacute;nebre Premium</option>
-										<option value="6">Servicio F&uacute;nebre Solo</option>
-							</select>
-						</div>
-						<div class="form-group row">
-						<label class="col-2 col-form-label">Adherentes</label>
-							<select name="b" class="form-control col-10" onchange="operacion()" id="b">
-										<option value="0">Precio Base (sin adherentes)</option>
-										<option value="1">+1 adherente</option>
-										<option value="2">+2 adherentes</option>
-										<option value="3">+3 adherentes</option>
-										<option value="4">+4 adherentes</option>
-										<option value="5">+5 adherentes</option>
-							</select>
-
-						</div>
-
-
-						<div class="form-group row precio">
-							
-								<label class="col-2 col-form-label" style="color: white">Precio Final: </label>
-								<input class="precio_total" type="text" class="form-control col-10"   name="preciofinal"  id="preciofinal" disabled value="$ 400">	
-								
-						
-							
-						</div>
-			<div class="row seccion" style="padding-top: 10px;">
-					<h2>2. Selecci&oacuten de Forma de Pago</h2>
-			</div>
-						<div class="row">
-							<p>Formas de Pago disponibles:</p> 
-						</div>
-						<div class="row justify-content-center">
-							<input class="tarjeta" type="button" name="hola" value="Tarjeta Naranja" onclick="mostrar()">
-							<input class="tarjeta" type="button" name="hola" value="Tarjeta Nevada" onclick="mostrar()">
-							<input class="tarjeta" type="button" name="hola" value="Tarjeta Visa" onclick="mostrar2()">
-							<input class="tarjeta" type="button" name="hola" value="Tarjeta Nativa Mastercard" onclick="mostrar2()">
-							<input class="tarjeta" type="button" name="hola" value="Otras Tarjetas" onclick="mostrar()">
-						</div>
-						
-
-
-
-
-							<div id="flotante" style="display:none;">
-
-								<form name="contacto" id="contacto" action="controllers/envio2.php" method="post">    
-								<br>
-								<div class="form-group row">							
-									<label class="col-2 col-form-label">Nombre</label>					
-									<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
-								</div>
-
-
-							
-							<div class="form-group row">
-								
+					<div class="row seccion">
+							<h2>1. Selecci&oacuten del Servicio</h2>
+					</div>
+					<div class="form-group row">
+					<label class="col-2 col-form-label">Servicio</label>
+						<select name="a" class="form-control col-10" onchange="operacion()" id="a">
+									<option value="1">Plan Grupo Familiar Premium</option>
+									<option value="2">Plan Grupo Familiar Directo</option>
+									<option value="3">Plan Cementerio Parque Premiun</option>
+									<option value="4">Plan Cementerio Parque</option>
+									<option value="5">Servicio F&uacute;nebre Premium</option>
+									<option value="6">Servicio F&uacute;nebre Solo</option>
+						</select>
+					</div>
+					<div class="form-group row">
+					<label class="col-2 col-form-label">Adherentes</label>
+						<select name="b" class="form-control col-10" onchange="operacion()" id="b">
+									<option value="0">Precio Base (sin adherentes)</option>
+									<option value="1">+1 adherente</option>
+									<option value="2">+2 adherentes</option>
+									<option value="3">+3 adherentes</option>
+									<option value="4">+4 adherentes</option>
+									<option value="5">+5 adherentes</option>
+						</select>
+					</div>
+					<div class="form-group row precio">
+							<label class="col-2 col-form-label" style="color: white">Precio Final: </label>
+							<input class="precio_total" type="text" class="form-control col-10"   name="preciofinal"  id="preciofinal" disabled value="$ 400">	
+					</div>
+					<div class="row seccion" style="padding-top: 10px;">
+							<h2>2. Selecci&oacuten de Forma de Pago</h2>
+					</div>
+					<div class="row">
+						<p>Formas de Pago disponibles:</p> 
+					</div>
+					<div class="row justify-content-center">
+						<input class="tarjeta" type="button" name="hola" value="Tarjeta Naranja" onclick="mostrar()">
+						<input class="tarjeta" type="button" name="hola" value="Tarjeta Nevada" onclick="mostrar()">
+						<input class="tarjeta" type="button" name="hola" value="Tarjeta Visa" onclick="mostrar2()">
+						<input class="tarjeta" type="button" name="hola" value="Tarjeta Nativa Mastercard" onclick="mostrar2()">
+						<input class="tarjeta" type="button" name="hola" value="Otras Tarjetas" onclick="mostrar()">
+					</div>
+					<!-- datos tarjeta -->
+					<div id="flotante" style="display:none;">
+						<form name="contacto" id="contacto" action="controllers/envio2.php" method="post">    
+							<br>
+							<div class="form-group row">							
+								<label class="col-2 col-form-label">Nombre</label>					
+								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+							</div>
+							<div class="form-group row">							
 									<label class="col-2 col-form-label">Correo</label>
 									<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
 									<p class="help-block"></p>
 							</div>
-							
 							<div class="form-group row">
 								<label class="col-2 col-form-label">Telefono</label>
 								<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
 							</div>
-
-							
-
-										<div class="form-group row" id="card-number-field">
-											<label class="col-2 col-form-label" for="cardNumber">Tarjeta</label>
-											<input type="text" class="form-control col-10" id="cardNumber" name="tar" placeholder="XXXX-XXXX-XXXX-XXXX">
-
-								</div>
-							
-						
-						
-							
+							<div class="form-group row" id="card-number-field">
+								<label class="col-2 col-form-label" for="cardNumber">Tarjeta</label>
+								<input type="text" class="form-control col-10" id="cardNumber" name="tar" placeholder="XXXX-XXXX-XXXX-XXXX">
+							</div>	
 							<div class="form-group row">
-							
 								<label class="col-2 col-form-label">Vencimiento</label>
-									<select name="venmes"  id="venmes" ascendent>
-												<option value="00"  default >Mes</option>
-												<option value="01">01</option>
-												<option value="02">02</option>
-												<option value="03">03</option>
-												<option value="04">04</option>
-												<option value="05">05</option>
-												<option value="06">06</option>
-												<option value="07">07</option>
-												<option value="08">08</option>
-												<option value="09">09</option>
-												<option value="10">10</option>
-												<option value="11">11</option>
-												<option value="12">12</option>
-									</select>
-		
-							
-								
-									<label class="col-form-label"> &nbsp;/&nbsp; </label>
-										<select name="vencanio"  id="venanio">
-													<option value="00" default>A&ntilde;o</option>
-													<option value="17">17</option>
-													<option value="18">18</option>
-													<option value="19">19</option>
-													<option value="20">20</option>
-													<option value="21">21</option>
-													<option value="22">22</option>
-													<option value="23">23</option>
-													<option value="24">24</option>
-													<option value="25">25</option>
-													<option value="26">26</option>
-													<option value="27">27</option>
-													<option value="28">28</option>
-													<option value="29">29</option>
-													<option value="30">30</option>
-													<option value="31">31</option>
-										</select>
-			
-						</div>
-
-
-
-
-							
+								<select name="venmes"  id="venmes" ascendent>
+											<option value="00"  default >Mes</option>
+											<option value="01">01</option>
+											<option value="02">02</option>
+											<option value="03">03</option>
+											<option value="04">04</option>
+											<option value="05">05</option>
+											<option value="06">06</option>
+											<option value="07">07</option>
+											<option value="08">08</option>
+											<option value="09">09</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+								</select>	
+								<label class="col-form-label"> &nbsp;/&nbsp; </label>
+								<select name="vencanio"  id="venanio">
+											<option value="00" default>A&ntilde;o</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+								</select>
+							</div>
 							<div class="form-group row">	
 									<label class="col-2 col-form-label">Domicilio</label>
-									
-								
 									<input type="text" minlength="8" class="form-control col-10"  required name="domicilio" placeholder="Ingrese su domicilio" >
-									
 							</div>	
-
 							<div class="form-group row"  style="display:none;">	
 								<label class="col-2 col-form-label">Plan Elegido</label>
 								<input type="text" minlength="8" class="form-control col-10" id="holas2" required name="planselec2" placeholder="PGrupo Familiar Base" value="PGrupo Familiar Base" readonly >
 							</div>
 
-
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="./terminos-condiciones.html" >Terminos y Condiciones </a></label><br>
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required> Autorizo que los pagos a Débitos Automáticos de Virgen Morena S.R.L. se debiten automáticamente de mi tarjeta de crédito.<br>
 
 							<button type="button btn-light" id="btnsubmit" name="submit" class="btn btn-primary pull-right " >Suscribirme</button>
-							
-
-
-
-							</form>
-
-							</div>
-
-
-
-							<div id="flotante2" style="display:none;">
-
-							<form name="contacto2" id="contacto2" action="controllers/enviomer.php" method="post"> 
-								
-							
-
-								<br>
-								<div class="form-group row">							
-									<label class="col-2 col-form-label">Nombre</label>					
-									<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						</form>
+					</div>
+					<!-- datos tarjeta -->
+					<div id="flotante2" style="display:none;">
+						<form name="contacto2" id="contacto2" action="controllers/enviomer.php" method="post"> 
+							<br>
+							<div class="form-group row">							
+								<label class="col-2 col-form-label">Nombre</label>					
+								<input type="text" minlength="6" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
 							</div>
 
 							<div class="form-group row">	
@@ -294,144 +230,80 @@
 								<input type="text" minlength="8" class="form-control col-10" id="hos" required name="hos" placeholder="PGrupo Familiad" value="http://mpago.la/a9Qp" readonly >
 							</div>
 
-							
-
 							<input type="checkbox" name="terminos" id="terminos" value="ok" required>	<label for="terminos" >Aceptar <a href="./terminos-condiciones.html" >Terminos y Condiciones </a></label><br>
 
 							<button type="button btn-light submit" class="btn btn-primary pull-right " >Suscribirme</button>
-							
-
-							<!--<button type="button btn-light submit" class="btn btn-primary pull-right md-trigger" data-modal="modal-9">Suscribirme</button>-->
-
-
-
-	                        </form>
-
-					</div>
-
-
-
-
-
-
-
-
-
-
-						
-<!--</form>-->
-
-
-
-
-
-						
-
-						
-					
-					
-			
-
-
-						
-					
+						</form>
+					</div>	
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
+	<!-- pie de pagina -->
+	<div class="footer" >
+		<div class="container footer-data">
+			<div class="row ">
+				<div class="col-lg-5">
+					<h4>Contactanos</h4>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154641745 </p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> cementerioparquevmorenacat@gmail.com</p>
+					<p><i class="fa fa-home" aria-hidden="true"></i> Rep&uacuteblica 34, San Fernando del Valle de Catamarca</p>
+				</div>
+				<div class="col-lg-3">
+					<h4>Acerca de Nosotros</h4>
+					<p>La empresa</p>
+					<p>Privacidad</p>
+					<p>Terminos y condiciones</p>
+				</div>
+				<div class="col-lg-4">
+					<h4>Sigamos juntos</h4>
+					<i class="social fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/CementerioParqueVirgenMorena/?ref=br_rs" target="_blank">Virgen Morena Fanpage</a>
 					
-					
-					
-
-			
-
-
-						
-                        
-					</form>
 				</div>
 			</div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-<div class="footer" >
-	<div class="container footer-data">
-		<div class="row ">
-			<div class="col-lg-5">
-				<h4>Contactanos</h4>
-				<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154641745 </p>
-				<p><i class="fa fa-envelope-o" aria-hidden="true"></i> cementerioparquevmorenacat@gmail.com</p>
-				<p><i class="fa fa-home" aria-hidden="true"></i> Rep&uacuteblica 34, San Fernando del Valle de Catamarca</p>
-			</div>
-			<div class="col-lg-3">
-				<h4>Acerca de Nosotros</h4>
-				<p>La empresa</p>
-				<p>Privacidad</p>
-				<p>Terminos y condiciones</p>
-			</div>
-			<div class="col-lg-4">
-				<h4>Sigamos juntos</h4>
-				<i class="social fa fa-facebook-official" aria-hidden="true"></i><a href="https://www.facebook.com/CementerioParqueVirgenMorena/?ref=br_rs" target="_blank">Virgen Morena Fanpage</a>
-				
-			</div>
+		</div>
+		<div class="container separador">
+			<hr>
+		</div>
+		<div class="row justify-content-center">
+			<p class="frase-pie">Nuestro compromiso es acompa&ntilde;arte cuando las palabras sobran.</p>
 		</div>
 	</div>
-	<div class="container separador">
-		<hr>
+	<!-- autores en post footer -->
+	<div class="container-fluid autor">
+		<p> <strong>Copyright &copy; 2017. Desarrollado por Acosta Arga&ntilde;araz - Blanco Olaz.</strong> Todos los derechos reservados. </p>
 	</div>
-	<div class="row justify-content-center">
-		<p class="frase-pie">Nuestro compromiso es acompa&ntilde;arte cuando las palabras sobran.</p>
-	</div>
-</div>
 
-<div class="container-fluid autor">
-	<p> <strong>Copyright &copy; 2017. Desarrollado por Acosta Arga&ntilde;araz - Blanco Olaz.</strong> Todos los derechos reservados. </p>
-</div>
+<!--///////////////////////////////////// scripts /////////////////////////////////////////-->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/plansuma.js"></script>
+		<script type="text/javascript" src="js/extras.js"></script>
+		<script src="js/localizacion.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.payform.min.js" charset="utf-8"></script>
+		<script src="js/script.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script src="js/jqBootstrapValidation.js"></script>
+		<script>
+			$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+		</script>
+		<div class="md-overlay"></div><!-- the overlay element -->
+		
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
 
-	<script type="text/javascript" src="js/plansuma.js"></script>
-	<script type="text/javascript" src="js/extras.js"></script>
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-	<script src="js/localizacion.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/jquery.payform.min.js" charset="utf-8"></script>
-    <script src="js/script.js"></script>
-	<script>
-		new WOW().init();
-	</script>
-	<script src="js/jqBootstrapValidation.js"></script>
-	<script>
-	 	$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
-	</script>
-	<div class="md-overlay"></div><!-- the overlay element -->
-	
-	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
-	<script src="js/classie.js"></script>
-	<script src="js/modalEffects.js"></script>
-
-	<!-- for the blur effect -->
-	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-	<script>
-		// this is important for IEs
-		var polyfilter_scriptpath = '/js/';
-	</script>
-	<script src="js/cssParser.js"></script>
-	<script src="js/css-filters-polyfill.js"></script>
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+		<script>
+			// this is important for IEs
+			var polyfilter_scriptpath = '/js/';
+		</script>
+		<script src="js/cssParser.js"></script>
+		<script src="js/css-filters-polyfill.js"></script>
 </body>
-
 </html>
