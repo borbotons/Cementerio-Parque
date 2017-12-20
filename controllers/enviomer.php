@@ -40,7 +40,7 @@ $error = ""; $mensajeExito = "";
 		//Mensajes de Exito o Fallo
 		if (mail($para, $asunto, utf8_decode($mensaje), $header)) {
 			
-		   header( "refresh:0;hos" );
+		   header( "refresh:0;$var" );
 		   die();
 		   //die("Gracias, su mensaje se envio correctamente.");
 		  
