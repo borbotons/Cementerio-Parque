@@ -5,12 +5,6 @@ body
 	overflow-x: hidden;
 }
 
-div.emergencia
-{
-	height: 50px;
-	background: white;
-	padding-top: 15px;
-}
 
 div.cabeza
 {
@@ -19,8 +13,7 @@ div.cabeza
 	padding: 20px 0;
 
 	background-image: url(../img/baner-precios2.jpg);
-	background-size: 95% 60%;
-    background-attachment: fixed;
+	background-position: cover;
 }
 
 .cabeza-texto

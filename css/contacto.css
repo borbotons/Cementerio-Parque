@@ -2,18 +2,15 @@ body
 {
 	margin: 0;
 	padding: 0;
+
+	font-family: 'Lato';
+	overflow-x: hidden;
 }
 
-div.emergencia
-{
-	height: 50px;
-	background: white;
-	padding-top: 15px;
-}
 
 .fondo-verde
 {
-	min-height: 1100px;
+	min-height: 1100px; /*ver*/
 	background-color: #50b204; 
 	padding-top: 30px;
 	padding-bottom: 70px;
@@ -22,7 +19,6 @@ div.emergencia
 .fondo-fomulario
 {
 	min-height: 1000px;
-	width: 900px;
 	background-color: white;
 	
 	padding-bottom: 20px;
@@ -42,19 +38,24 @@ div.emergencia
 
 .cabeza img
 {
-		width: 60%;
-	height: 60%;
+	width: 30%;
+	height: 30%;
 }
 
 .titular
 {
-	padding-top: 30px;
-	font-family: 'Lato';
+	padding-top: 20px;
+	color: #50b204;	
+	width: 95%;
+	text-align: center;
 }
 
 .frase
 {
 	padding-top: 30px;
+	width: 95%;
+	text-align: center;
+	padding-left: 2%;
 }
 
 .form-style
@@ -67,4 +68,76 @@ div.emergencia
 	width: 400px;
 }
 
+label 
+{
+	font-size: 1em;
+	display: inline-block;
+}
+@media screen and (min-width: 480px){
+
+	
+}
+
+
+@media screen and (min-width: 767px){
+
+}
+
+@media screen and (min-width: 950px){
+	.fondo-verde
+	{
+		min-height: 1100px;
+		background-color: #50b204; 
+		padding-top: 30px;
+		padding-bottom: 70px;
+	}
+
+	.fondo-fomulario
+	{
+		min-height: 1000px;
+		width: 900px;
+		background-color: white;
+		
+		padding-bottom: 20px;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	}
+
+	.fondo-fomulario hr
+	{
+		width: 25%;
+		background-color: #a5e541;
+	}
+
+	.cabeza
+	{
+		padding-top: 30px;
+	}
+
+	.cabeza img
+	{
+			width: 60%;
+		height: 60%;
+	}
+
+	.titular
+	{
+		padding-top: 30px;
+		font-family: 'Lato';
+	}
+
+	.frase
+	{
+		padding-top: 30px;
+	}
+
+	.form-style
+	{
+		padding-top: 60px;
+	}
+
+	.controls 
+	{
+		width: 400px;
+	}
+}
 

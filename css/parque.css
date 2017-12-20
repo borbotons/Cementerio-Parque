@@ -19,8 +19,7 @@ div.cabeza
 	padding: 20px 0;
 
 	background-image: url(../img/baner-parque2.jpg);
-	background-size: 100% 70%;
-    background-attachment: fixed;
+	background-position: cover;
 }
 
 .cabeza-texto
