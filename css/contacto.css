@@ -46,14 +46,14 @@ body
 {
 	padding-top: 20px;
 	color: #50b204;	
-	width: 95%;
+	width: 100%;
 	text-align: center;
 }
 
 .frase
 {
 	padding-top: 30px;
-	width: 95%;
+	width: 100%;
 	text-align: center;
 	padding-left: 2%;
 }
@@ -128,6 +128,7 @@ label
 	.frase
 	{
 		padding-top: 30px;
+		width: 100%;
 	}
 
 	.form-style
