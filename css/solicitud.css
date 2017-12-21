@@ -1,14 +1,10 @@
 body
 {
 	margin: 0;
-	padding: 0;
-}
-
-div.emergencia
-{
-	height: 50px;
-	background: white;
-	padding-top: 15px;
+    padding: 0;
+    
+    font-family: 'Lato';
+    overflow-x: hidden;
 }
 
 .fondo-verde
@@ -22,7 +18,7 @@ div.emergencia
 .fondo-fomulario
 {
 	min-height: 1000px;
-	width: 900px;
+	width: 95%;
 	background-color: white;
 	
 	padding-bottom: 20px;
@@ -44,7 +40,7 @@ div.emergencia
 .titular
 {
 	padding-top: 30px;
-	font-family: 'Lato';
+    font-family: 'Lato';
 }
 
 .frase
@@ -56,6 +52,17 @@ div.emergencia
 
     text-align: center;
     font-style: italic;
+}
+
+.adherente{
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .precio
@@ -79,6 +86,16 @@ div.emergencia
 .seccion
 {
     color: #50b204;
+    
+}
+
+.seccion h2{
+    font-size: 1.5em;
+    padding-left: 3%;
+}
+
+.pago{
+    padding-left: 3%;
 }
 
 .form-style
@@ -134,10 +151,156 @@ div.emergencia
 
     margin-top: 30px;
 
-    font-family: 'Lato';
+    
 }
 
 .subtitulo h2 
 {
     color: white;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+
+@media screen and (min-width: 480px){
+
+	
+}
+
+
+@media screen and (min-width: 767px){
+
+}
+
+@media screen and (min-width: 950px){
+    .fondo-verde
+    {
+        min-height: 1100px;
+        background-color: #50b204; 
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .fondo-fomulario
+    {
+        min-height: 1000px;
+        width: 900px;
+        background-color: white;
+        
+        padding-bottom: 20px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+
+    .cabeza
+    {
+        padding-top: 30px;
+    }
+
+    .cabeza img
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .titular
+    {
+        padding-top: 30px;
+        font-family: 'Lato';
+    }
+
+    .frase
+    {
+        padding-top: 30px;
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 100%;
+
+        text-align: center;
+        font-style: italic;
+    }
+
+    .precio
+    {
+        background: #50b204; 
+        padding: 5px 1px;
+    }
+
+    .precio_total
+    {
+        background: #50b204; 
+        width: 80%;
+        border: 1px dotted white;
+        border-radius: 50px;
+
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    .seccion
+    {
+        color: #50b204;
+    }
+
+    .form-style
+    {
+        padding-top: 40px;
+        border-top: 1px dotted #a5e541;
+    }
+
+    .controls 
+    {
+        width: 400px;
+    }
+
+    .tarjeta
+    {
+        min-width: 150px;
+        height: 40px;
+
+        font-family: 'Lato';
+        color: #50b204; 
+        cursor: pointer;
+
+        border: 1px solid #50b204; 
+        background: white;
+
+        overflow: hidden;
+        transition: color 0.3s ease-out;
+        
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    .tarjeta:hover
+    {
+        color: white;
+        background: #50b204; 
+        transition: background 0.5s linear;
+    }
+
+    .tarjeta:focus
+    {
+        color: white;
+        background: #50b204; 
+    }
+
+
+    .subtitulo
+    {
+        display: block;
+
+        background: #50b204; 
+        padding: 5px 10px;
+
+        margin-top: 30px;
+
+        font-family: 'Lato';
+    }
+
+    .subtitulo h2 
+    {
+        color: white;
+    }
 }
