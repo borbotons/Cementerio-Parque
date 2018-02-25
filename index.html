@@ -21,36 +21,11 @@
 	<title> Principal | Virgen Morena</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #71c837;">
-		<a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"> </a>
-
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSite" >
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSite"> 
-			<ul class="navbar-nav mr-auto ml-auto text-center">
-				<li class="nav-item">
-					<a class="nav-link" href="./servicios.html">Servicios</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./novedades.html">Novedades</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./parque.html">El Parque</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./institucional.html">Institucional</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./contacto.html">Contacto</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	
 
 	<div class="ui-desk"></div>
 	<!-- cabecera principal    -->
+	<!--  HEADER V 1.0 caducado
 	<div class="header wow fadeIn " data-wow-delay="0.1s">
 		<div class="container-fluid">
 			<div class="row">
@@ -65,8 +40,55 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
+	<div class="container-fluid bienvenida-fondo">
+		<div class="container">
+			
+		</div>
+		<nav class="navbar navbar-expand-md sticky-top menu" style="">
+			<a class="navbar-brand" href="./index.html"><img src="img/titulo3.png" alt="" width="130px"> </a>
+	
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSite" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarSite"> 
+				<ul class="navbar-nav mr-auto ml-auto text-center">
+					<li class="nav-item">
+						<a class="nav-link" href="./servicios.html"><i class="fa fa-leaf" aria-hidden="true"></i> SERVICIOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./novedades.html">NOVEDADES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./parque.html">EL PARQUE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./institucional.html">INSTITUCIONAL</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">CONTACTO</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container bienvenida">
+			<div class="row justify-content-center">
+				<h1 class="primero wow fadeIn " data-wow-delay="0.35s">Lo que no se olvida, vive <mark>para siempre.</mark></h1>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<p class="lead wow fadeIn " data-wow-delay="0.5s"> <mark id="subtitulo"> &Uacutenico lugar en la Capital, donde <strong>naturaleza</strong> y <strong>paz</strong> se conjugan para crear la atmosfera de armon&iacutea y reflexi&oacuten,
+						necesaria para <strong>encontrarnos con nuestros seres queridos</strong>.</mark></p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<img src="img/titulo2.png" alt="">
+			</div>
+		</div>
+	</div>
 	<!--
 	<div class="container-fluid noticias">
 		<div class="row justify-content-center noti_titulo">
@@ -152,13 +174,30 @@
 	
 	<!-- frase full width -->
 	<div class="container-fluid frase1 wow fadeIn" >
-		<h1>En Virgen Morena, primer cementerio parque ecol&oacutegico de la capital, nos interesa brindarte el mejor servicio, nuestro compromiso es acompa&ntilde;arte cuando las palabras sobran.</h1>
+		<div class="container frase1-contenido">
+			<div class="row justify-content-center">
+				<h1 class="display-4">
+						<i class="fa fa-quote-left" aria-hidden="true"></i> <i class="fa fa-quote-right" aria-hidden="true"></i>
+				</h1>
+			</div>
+			<div class="row">
+					<p>En Virgen Morena, <strong>primer cementerio parque ecol&oacutegico de la capital</strong>, 
+						nos interesa brindarte siempre el mejor servicio. Nuestro compromiso es <strong>acompa&ntilde;arte cuando las palabras sobran</strong>.</p>
+			</div>
+			<div class="row justify-content-center">
+				<h1 class="display-4">
+						. . .
+				</h1>
+			</div>
+		</div>
+		
 	</div>
 	<!-- listado de servicios -->
+	<div class="container-fluid servicios-fondo">
 	<div class="container servicios">
-		<h2>NUESTROS SERVICIOS</h2>
-		<p>Tenemos un servicio pensado para cada situacion. Queremos acompa&ntilde;arte y apoyarte en los momentos de mayor necesidad.</p>
-		<div class="row justify-content-center">
+		<h2>· Conoc&eacute nuestros servicios ·</h2>
+		<p class="lead">Tenemos un servicio <strong>pensado para cada situacion</strong>. Queremos acompa&ntilde;arte y apoyarte en los momentos de mayor necesidad.</p>
+		<div class="row justify-content-center servicios-items">
 			<div class=" col-lg-3 col-md-3 wow fadeInUp " data-wow-delay="0.8s">
 				<i class="fa fa-heart" aria-hidden="true"></i>
 				<h4>Sepelios</h4>
@@ -172,7 +211,7 @@
 				<h4>Inhumaci&oacuten</h4>
 			</div>
 		</div>
-		<div class="row justify-content-center">
+		<div class="row justify-content-center servicios-items">
 			<div class="col-lg-3 col-md-3 wow fadeInLeft " data-wow-delay="0.8s">
 				<i class="fa fa-circle-o-notch" aria-hidden="true"></i>
 				<h4>Cremaci&oacuten</h4>
@@ -183,14 +222,47 @@
 			</div>
 		</div>
 		<div class="row justify-content-center vermas">
-			<a href="./servicios.html"><button type="button" class="btn btn-outline-success">&iexcl;Ver m&aacutes!</button></a>
+			<a href="./servicios.html"><button type="button" class="btn btn-outline-white">&iexcl;Ver m&aacutes!</button></a>
 		</div>
 	</div>
+	</div>
 	<!-- entidades asociadas al parque Virgen Morena -->
+	<div class="container-fluid cliente">
+		<div class="container">
+			<div class="row">
+				<div class="row justify-content-center ">
+					<h3>· Conf&iacutean en nosotros ·</h3> 
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-sm-7 derecha">
+						<h2> <mark>Honorable C&aacutemara de</mark> <br> <mark>Diputados de Catamarca </mark></h2><br>
+												
+					</div>
+					<div class="col-sm-4">
+							<img src="img/escudo.png" width="200px" alt="">
+					</div>
+			</div>
+			<div class="row justify-content-center item">
+				<div class="col-sm-3">
+						<img src="img/apunca.png" width="200px" alt="">
+				</div>
+				<div class="col-sm-5 izquierda item">
+					<h2><mark>Asociaci&oacuten del </mark> <br> <mark>personal de la UnCa</mark> </h2><br>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+					<div class="col-md-10 centro">
+							<h2> <mark>Tribunal de Cuentas de Catamarca</mark></h2><br>
+					</div>		
+			</div>
+		</div>
+	</div>
+	<!--
 	<div class="container-fluid clientes">
 		<div class="container">
-			<div class="row justify-content-center e1 h-blanco">
-				<h3>Conf&iacutean en nosotros</h3> 
+			<div class="row justify-content-center e1 ">
+				<h3>· Conf&iacutean en nosotros ·</h3> 
 			</div>
 			<div class="row justify-content-center e2">
 				<div class="col-md-5 col-xs-8">
@@ -209,7 +281,7 @@
 				<div class="col-md-1"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- algunas caracteristicas del parque -->
 	<div class="container-fluid parque">
 		<div class="row back-text justify-content-center">
@@ -265,10 +337,10 @@
 			<div class="row ">
 				<div class="col-lg-5">
 					<h4>Contactanos</h4>
-					<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154504349 </p>
-					<p><i class="fa fa-phone" aria-hidden="true"></i> Emergencias: 0383 154235665 </p>
-					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> cementerioparquevmorenacat@gmail.com</p>
-					<p><i class="fa fa-home" aria-hidden="true"></i> Rep&uacuteblica 34, San Fernando del Valle de Catamarca</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Emergencias: 0383 154504349 </p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; Emergencias: 0383 154235665 </p>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp; cementerioparquevmorenacat@gmail.com</p>
+					<p><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Rep&uacuteblica 34, San Fernando del Valle de Catamarca</p>
 				</div>
 				<div class="col-lg-3 ocultar">
 					<h4>Acerca de Nosotros</h4>
