@@ -73,10 +73,10 @@ div.autor
 	}
 	.footer
 	{
-		
+		max-height: 350px;
 		background: #2D2D37;
 		color: #ccc;
-		padding-top: 5%;
+		padding-top: 30px;
 		text-align: center;
 	}
 
@@ -87,9 +87,8 @@ div.autor
 	
 	.footer h4 
 	{
-		font-size: 20px;
+		border-bottom: 1px dotted white;
 		line-height: 36px;
-		color: chartreuse;
 	}
 	
 	.footer a
@@ -116,7 +115,7 @@ div.autor
 	.separador
 	{
 		width: 60%;
-		background-color: rgba(255, 255, 255, 0.322);
+		background-color: rgba(255, 255, 255, 0.61);
 		margin-top: 9%;
 	}
 	

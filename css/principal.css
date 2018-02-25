@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 body
 {
 	font-family: 'Lato';
 	overflow-x: hidden;
-
-	background: #ebeaeb;
 }
 
 .hidden
@@ -378,7 +375,6 @@ div.parque
 
 /* tablet */
 @media screen and (min-width: 767px){
-	/*
 	.header
 	{
 		height: 400px;
@@ -412,145 +408,62 @@ div.parque
 		width: 300px;
 		position: absolute;
 		left: 130px;
-	}*/
-	
-	/* ------------------------------------------------
-			NUEVO CODIGO V 2.0
-	--------------------------------------------------*/
-	.bienvenida-fondo{
-		height: 100vh;
-		max-height: 100vh;
-
-		background-image: url(../img/d.jpg);
-		background-size: 100% 100%;
-		background-attachment: fixed;
-
-		
-	}
-
-	.bienvenida{
-		padding-top: 15%;
-		padding-bottom: 30%;	
-	}
-
-	.bienvenida h1{
-		font-family: 'Playfair Display', serif;
-		font-style: normal !important;
-		font-size: 60px;
-		line-height: 90px;
-
-		color: white;
-		letter-spacing: 1px;
-
-		border-bottom: 1px solid rgba(255, 255, 255, 0.349);
-		padding-bottom: 3%;
 	}
 	
-	.bienvenida img{
-		width: 20%;
-		height: 20%;
-
-		margin-top: 7%;
-	}
-
-	.bienvenida p{
-		margin-top: 2%;
-		text-align: center;
-		letter-spacing: 1px;
-		color: white;
-
-		font-size: 20px;
-	}
 	
-	.bienvenida mark#subtitulo{
-		padding-left: 1%;
-		padding-right: 1%;
-	}
 	/* frase  ---------------------------------------*/
 	
 	.frase1
 	{
-		
-		height: 100vh;
-		background-color: white !important; /*#50b204 */
+		min-height: 200px;
+		background-color: #50b204;
 		text-align: center;
-	
-		color: #495057 !important;
-		font-family: 'Lato' !important;
-		font-weight: 400 !important;
+		padding-top: 8%;  
+		padding-bottom: 8%; 
+		color: white;
+		font-family: 'Lato Hairline';
 		
 	}
-
-	.frase1-contenido{
-		padding-top: 15%;  
-		padding-bottom: 20%; 
-	}
 	
-	.frase1 p
+	.frase1 h1
 	{
-		font-size: 40px;
-		line-height: 50px;
+		font-size: 30px;
 		font-weight: 300;
-	}
-
-	.frase1 p strong{
-		font-weight: 700;
 	}
 	
 	/*  Listado servicios   --------------------------*/
 	
-	.servicios-fondo{
-		background: #50b204 !important;
-	}
-
 	div.servicios
 	{
 		min-height: 500px;
 		text-align: center;
 		padding-bottom: 8%;
 	}
-
-	.servicios h2{
-		font-family: 'Playfair Display', serif;
-		font-style: normal !important;
-		font-size: 40px;
-		letter-spacing: 1px;
-	}
 	
 	.servicios h2, .servicios h4
 	{
-		color: white !important; 
+		color: #76b71f; 
 		margin: 20px 0 20px;
 	}
-	/*
+	
 	.servicios p
 	{
-		font-size: 20px;
+		font-size: 14px;
 		padding-bottom: 30px;
-		font-style: ;
+		font-style: italic;
 		padding-left: 1%;
 		padding-right: 1%;
-	}*/
-
-	.lead{
-		font-size: 18px !important;
-		font-style: normal !important;
-		letter-spacing: 1px;
 	}
 	
-	.servicios-items i 
+	.servicios i 
 	{
 		height: 60px;
 		width: 60px;
 		font-size: 30px;
 		padding: 15px 15px;
 		border-radius: 50px;
-		background-color: white !important; /*#76b71f*/
-		color: #76b71f !important;
-
-		box-shadow: 0px 23px 30px -20px rgba(0,0,0,0.4);
-
-		/*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+		background-color: #76b71f;
+		color: white;
 	}
 
 	
@@ -558,13 +471,12 @@ div.parque
 	
 	.clientes
 	{
-		height: 500px !important;
+		height: 350px;
 
 		background: url("../img/baner2.jpg");
 		background-size: 100% 100%;
 		background-attachment: fixed;
 		
-		background: #4fb20471;
 	}
 	
 	.e1
@@ -582,15 +494,14 @@ div.parque
 	.clientes h3
 	{
 		color: white;
-		font-family: 'Playfair Display', serif !important;
-		font-style: normal !important;
-		font-size: 40px !important;
-		letter-spacing: 1px !important;
+		font-family: 'Lato';
+		font-size: 35px;
+		font-weight: 300;
 	}
 	
 	.e2
 	{
-		padding-top: 10% !important;
+		padding-top: 30px;
 	}
 	
 	.e2 img 
@@ -598,66 +509,7 @@ div.parque
 		width: 280px;	
 	}
 	
-
-	.cliente{
-		padding-top: 5%;
-		padding-bottom: 5%;
-
-		background: url("../img/baner2.jpg");
-		background-size: 100% 100%;
-		background-attachment: fixed;
-	}
-
-	.item{
-		padding-top: 1%;
-		padding-bottom: 1%;
-	}
-
-	.cliente h3
-	{
-		color: white;
-		font-family: 'Playfair Display', serif !important;
-		font-style: normal !important;
-		font-size: 40px !important;
-		letter-spacing: 1px !important;
-
-		margin-bottom: 60px;
-	}
 	
-	.cliente .derecha{
-		text-align: right;
-		padding-top: 5%;
-	}
-
-	.cliente .derecha h2{
-		font-size: 30px;
-		line-height: 60px;
-		letter-spacing: 1px;
-	}
-
-	.cliente mark{
-		padding-left: 3%;
-		padding-right: 3%;
-
-		background: #76b71f;
-	}
-
-	.cliente .izquierda{
-		text-align: left;
-		padding-top: 5%;
-	}
-
-	.cliente .izquierda h2{
-		font-size: 30px;
-		line-height: 60px;
-		letter-spacing: 1px;
-	}
-
-	.cliente .centro{
-		text-align: center;
-		padding-top: 5%;
-	}
-
 	/* Acerca del parque   ----------------------------------------*/
 	
 	
