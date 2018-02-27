@@ -1,4 +1,14 @@
 nav a 
 {
     font-size: 18px;
+
+    color: white;
+}
+
+nav a:hover{
+    color: chartreuse;
+}
+
+nav{
+   
 }

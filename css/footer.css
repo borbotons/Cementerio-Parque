@@ -4,7 +4,7 @@
 	background: #2D2D37;
 	color: #ccc;
 	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
 	text-align: center;
 }
 
@@ -42,7 +42,7 @@ div.autor
 .separador hr
 {
 	width: 60%;
-	background: rgba(255, 255, 255, 0.63);
+	background: rgba(255, 255, 255, 0.336);
 }
 
 .frase-pie
@@ -73,11 +73,13 @@ div.autor
 	}
 	.footer
 	{
-		max-height: 350px;
+		
 		background: #2D2D37;
 		color: #ccc;
-		padding-top: 30px;
+		padding-top: 5%;
 		text-align: center;
+
+		font-family: 'Roboto', sans-serif;
 	}
 
 	.footer-data
@@ -87,8 +89,9 @@ div.autor
 	
 	.footer h4 
 	{
-		border-bottom: 1px dotted white;
-		line-height: 36px;
+		font-size: 22px;
+		color: #ff9800;
+		margin-bottom: 20px;
 	}
 	
 	.footer a
@@ -115,15 +118,15 @@ div.autor
 	.separador
 	{
 		width: 60%;
-		background-color: rgba(255, 255, 255, 0.61);
-		margin-top: 9%;
+		background-color: rgba(255, 255, 255, 0.233);
+		margin-top: 7%;
 	}
 	
 	div.autor
 	{
 		height: 50px;
 		background: #25252d;
-		color: white;
+		color: rgba(255, 255, 255, 0.486);
 		font-size: 15px;
 		padding-top: 15px;
 		font-family: 'Lato Hairline';

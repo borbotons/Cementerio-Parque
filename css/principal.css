@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');  /* fuente a quitar*/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 body
 {
@@ -68,6 +69,7 @@ body
 	font-size: 20px;
 	font-weight: 300;
 }
+
 
 /*  Listado servicios   --------------------------*/
 
@@ -375,7 +377,7 @@ div.parque
 
 /* tablet */
 @media screen and (min-width: 767px){
-	.header
+	/*.header
 	{
 		height: 400px;
 	
@@ -408,11 +410,72 @@ div.parque
 		width: 300px;
 		position: absolute;
 		left: 130px;
+	}*/
+	
+	.bienvenida-fondo{
+		height: 100vh;
+
+		background-image: url(../img/b.jpg);
+		background-size: 100% 100%;
+		background-attachment: fixed;
+	}
+
+	.bienvenida-fondo::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		
+		/*background: rgba(248,79,50,0);*/
+		background: rgba(255,191,112,0);
+	background: -moz-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,191,112,0)), color-stop(87%, rgba(255,255,255,0.96)), color-stop(91%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+	background: -o-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+	background: -ms-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+	background: linear-gradient(to bottom, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf70', endColorstr='#ffffff', GradientType=0 );
+		
+		
 	}
 	
-	
+	.bienvenida{
+		padding-top: 10%;
+		padding-bottom: 7%;
+
+		z-index: 500 !important;
+	}
+
+	.bienvenida h1{
+		color: white;
+
+		font-size: 60px;
+
+		border-bottom: 1px solid white;
+		padding-bottom: 3%;
+		margin-bottom: 1.5%;
+
+		z-index: 5000;
+	}
+
+	.bienvenida p{
+		margin-bottom: 16%;
+		margin-top: 2%;
+
+		text-align: center;
+	}
+
+	.bienvenida img
+	{
+		width: 20%;
+		height: 20%;
+
+		z-index: 5000;
+	}
 	/* frase  ---------------------------------------*/
-	
+	/*
 	.frase1
 	{
 		min-height: 200px;
@@ -429,10 +492,44 @@ div.parque
 	{
 		font-size: 30px;
 		font-weight: 300;
+	}*/
+	
+	/*-------------------------------------------
+		FRASE v 2.0
+	--------------------------------------------*/
+	.frase1
+	{
+		height: 100vh;
+		background-color: white !important;
+
+		text-align: center;
+		
 	}
-	
+
+	.frase1-contenido{
+		padding-top: 8%;  
+		padding-bottom: 8%; 
+	}
+
+	.frase1 h1{
+		color: #50b204 !important;
+
+		font-size: 60px !important;
+		margin-bottom: 3% !important;
+	}
+
+	.frase1 p
+	{
+		font-family: 'Roboto', sans-serif;
+		font-size: 50px;
+		line-height: 60px;
+		font-weight: 300 !important;
+
+		color: #495057 !important;
+	}
+
 	/*  Listado servicios   --------------------------*/
-	
+	/*
 	div.servicios
 	{
 		min-height: 500px;
@@ -464,11 +561,60 @@ div.parque
 		border-radius: 50px;
 		background-color: #76b71f;
 		color: white;
+	}*/
+
+	/*-------------------------------------------
+		SERVICIOS v 2.0
+	--------------------------------------------*/
+	.servicios-fondo{
+		background:#40c057;
+		/*background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 61%);*/
 	}
 
+	.servicios{
+		padding-top: 3% !important;
+		padding-bottom: 5% !important;
+
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.servicios h2, .servicios h4
+	{
+		color: white !important; 
+		letter-spacing: 1px;
+	}
+
+	.servicios h2{
+		font-size: 35px;
+	}
+
+	.servicios p
+	{
+		font-size: 20px !important;
+		padding-bottom: 6% !important;
+		font-style: normal;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	.servicios i 
+	{
+		height: 60px;
+		width: 60px;
+		font-size: 30px;
+		padding: 15px 15px;
+		border-radius: 50px;
+		background-color: white !important;
+		color: #69db7c !important;
+
+		box-shadow: 0px 23px 30px -20px rgba(0,0,0,0.4);
+	}
 	
+	button{
+		cursor: pointer;
+	}
 	/*    Clientes asociados   -------------------------------------*/
-	
+	/*
 	.clientes
 	{
 		height: 350px;
@@ -507,9 +653,66 @@ div.parque
 	.e2 img 
 	{
 		width: 280px;	
+	}*/
+
+
+	.cliente{
+
+		position: relative;
+		width: 100%;
+		
+		background: url("../img/baner2.jpg") center center no-repeat;
+		background-size: cover;
+	}
+
+	.cliente::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+		opacity: .6; 
+	}
+
+	.cliente-contenido{
+		padding-top: 3%;
+		padding-bottom: 3% !important;
+
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.cliente h3{
+		color: white;
+		text-align: center;
+		font-size: 35px;
+		line-height: 50px;
+		letter-spacing: 1px;
+		font-weight: 300;
+
+		z-index: 500;
+	}
+
+	.borde{
+		border-bottom: 1px solid #ffffff42;
+	}
+
+	.cliente h2{
+		font-size: 20px;
+		line-height: 38px;
+		font-family: 'Playfair Display', serif;
 	}
 	
+	.cliente img{
+		width: 100px;
+		height: 100px;
+	}
 	
+	.blanco{
+		color: white !important;
+	}
+
 	/* Acerca del parque   ----------------------------------------*/
 	
 	
