@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 body
 {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	
 }
 
 div.emergencia
@@ -30,7 +34,7 @@ div.cabeza
 
 .cabeza-texto h1
 {
-	font-family: 'Open Sans', sans-serif;
+	
 	font-size: 40px; 
 	line-height: 45px;
 }
@@ -141,13 +145,13 @@ div.parque
 
 .acerca
 {
-	min-height: 300px;
+	
 }
 
 .info
 {
-	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	background-color: white;
 }
 
@@ -205,7 +209,6 @@ div.parque
 .estructura-info h1
 {
 	color: #50b204;
-	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
 }
 
@@ -225,10 +228,11 @@ div.parque
 
 
 @media screen and (min-width: 767px){
-
+	
 }
 
 @media screen and (min-width: 950px){
+	
 
     div.emergencia
 	{
@@ -240,7 +244,7 @@ div.parque
 	div.cabeza
 	{
 		width: 100%;
-		height: 250px;
+		height: 300px !important;
 		padding: 20px 0;
 	
 		background-image: url(../img/baner-parque2.jpg);
@@ -248,24 +252,50 @@ div.parque
 		background-attachment: fixed;
 	}
 	
+
 	.cabeza-texto
 	{
 		color: white;
-		text-align: left;
+		text-align: center;
+		padding-top: 5%;
 	}
 	
 	.cabeza-texto h1
 	{
-		font-family: 'Open Sans', sans-serif;
 		font-size: 80px; 
 		line-height: 100px;
+		letter-spacing: 1px;
 	}
 	
 	.cabeza-texto p
 	{
-		font-size: 20px;
+		font-size: 16px;
+		text-align: center !important;
+		letter-spacing: 5px;
 	}
-	
+
+	.info-logo img{
+		width: 20% !important;
+		height: 20% !important;
+	}
+	/*-----------------------------------------------
+		EXPLICACION DEL PARQUE
+	------------------------------------------------*/
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+
+	#map {
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+	}
+
+	.mapa-titulo{
+		padding-top: 2%;
+		padding-bottom: 1%;
+	}
+
 	div.parque
 	{
 		min-height: 500px;
@@ -276,7 +306,6 @@ div.parque
 	
 	.parque h1
 	{
-		font-family: 'Open Sans', sans-serif;
 		font-size: 60px;
 		color: white;
 		opacity: 0.3;
@@ -315,7 +344,7 @@ div.parque
 		padding-right: 10px;
 	
 		border-top: 1px solid white;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.301);
 	}
 	
 	.blanco
@@ -347,14 +376,22 @@ div.parque
 	
 	.acerca
 	{
-		min-height: 300px;
+		
 	}
 	
 	.info
 	{
-		padding-top: 30px;
-		padding-bottom: 50px;
+		padding-top: 2%;
 		background-color: white;
+	}
+
+	.mapa{
+		padding-bottom: 3%;
+	}
+
+	.mapa h1{
+		color: #50b204;
+		font-size: 28px;
 	}
 	
 	.info-logo img
@@ -363,6 +400,7 @@ div.parque
 		height: 40%;
 	}
 	
+	/*
 	.info-mapa
 	{
 		padding-top: 30px;
@@ -372,7 +410,7 @@ div.parque
 	{
 		width: 75%;
 		height: 75%;
-	}
+	}*/
 	
 	.contador-verde
 	{
@@ -400,7 +438,7 @@ div.parque
 	.estructura-info h1
 	{
 		color: #50b204;
-		font-family: 'Open Sans', sans-serif;
+		
 	}
 	
 	.estructura-info
