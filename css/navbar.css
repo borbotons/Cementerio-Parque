@@ -9,6 +9,14 @@ nav a:hover{
     color: chartreuse;
 }
 
-nav{
-   
+#nav-bot{
+    background: #ffffff86 !important;
+
+    z-index: 400000;
+
+    border: 1px dotted chartreuse;
+}
+
+#nav-bot span{
+    
 }

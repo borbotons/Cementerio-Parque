@@ -13,86 +13,173 @@ body
 	display: none;
 }
 
-.header
-{
-	height: 500px;
+.navbar-toggler-icon{
+	color: white;
+	z-index: 5000;
+}
+.bienvenida-fondo{
+	height: 100vh;
 
-	background-image: url(../img/d.jpg);
+	background-image: url(../img/b.jpg);
 	background-size: 100% 100%;
 	background-attachment: fixed;
-
-	color: white;
-	padding-top: 50px;
 }
 
-.header .izquierda
-{
-	padding-left: 6%;
-}
-
-.header .derecha 
-{
-	padding-top: 20%;
-	padding-left: 20px;
-}
-
-.primero
-{
-	font-family: 'Playfair Display', serif;
-	font-size: 25px;
-}
-
-.header img
-{
-	width: 240px;
+.bienvenida-fondo::before{
+	content: '';
 	position: absolute;
-	left: 18px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	/*background: rgba(248,79,50,0);*/
+	background: rgba(255,191,112,0);
+background: -moz-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,191,112,0)), color-stop(87%, rgba(255,255,255,0.96)), color-stop(91%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+background: -o-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+background: -ms-linear-gradient(top, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+background: linear-gradient(to bottom, rgba(255,191,112,0) 0%, rgba(255,255,255,0.96) 87%, rgba(255,255,255,1) 91%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbf70', endColorstr='#ffffff', GradientType=0 );
+	
+	
+}
+
+.bienvenida{
+	padding-top: 30%;
+	padding-bottom: 7%;
+
+	z-index: 500 !important;
+}
+
+.bienvenida h1{
+	color: white;
+
+	font-size: 28px;
+	font-family: 'Playfair Display', serif;
+
+	border-bottom: 1px solid white;
+	padding-bottom: 3%;
+	margin-bottom: 1.5%;
+
+	z-index: 5000;
+}
+
+.bienvenida span{
+	color: #33393f;
+}
+
+.bienvenida p{
+	margin-bottom: 16%;
+	margin-top: 6%;
+
+	text-align: center;
+}
+
+.bienvenida img
+{
+	width: 20%;
+	height: 20%;
+
+	z-index: 5000;
 }
 
 
 /* frase  ---------------------------------------*/
 
+/*-------------------------------------------
+	FRASE v 2.0
+--------------------------------------------*/
 .frase1
 {
-	min-height: 200px;
-	background-color: #50b204;
+	height: 70vh;
+	background-color: white !important;
+
 	text-align: center;
-	padding-top: 8%;  
-	padding-bottom: 8%; 
-	color: white;
-	font-family: 'Lato';
 	
 }
 
-.frase1 h1
+.frase1-contenido{
+	padding-top: 40%;  
+	padding-bottom: 20%; 
+}
+
+.frase1 h1{
+	color: #50b204 !important;
+
+	font-size: 20px !important;
+	margin-bottom: 3% !important;
+}
+
+.frase1 p
 {
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	font-weight: 300;
+	line-height: 24px;
+	font-weight: 300 !important;
+
+	color: #495057 !important;
 }
 
 
 /*  Listado servicios   --------------------------*/
 
-div.servicios
-{
-	min-height: 500px;
-	text-align: center;
-	padding-bottom: 8%;
+/*-------------------------------------------
+	SERVICIOS v 2.0
+--------------------------------------------*/
+.servicios-fondo{
+	background:#40c057;
+	/*background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 61%);*/
+}
+
+.servicios{
+	padding-top: 10% !important;
+	padding-bottom: 5% !important;
+
+	font-family: 'Roboto', sans-serif;
 }
 
 .servicios h2, .servicios h4
 {
-	color: #76b71f; 
-	margin: 20px 0 20px;
+	color: white !important; 
+	letter-spacing: 1px;
 }
+
+.servicios h2{
+	font-size: 25px;
+	text-align: center;
+}
+
+/*
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+.center{
+	height: 200px;
+	display: -webkit-flex;
+	display:         flex;
+	-webkit-align-items: center;
+			align-items: center;
+	-webkit-justify-content: center;
+			justify-content: center;
+}*/
 
 .servicios p
 {
-	font-size: 14px;
-	padding-bottom: 30px;
-	font-style: italic;
+	font-size: 20px !important;
+	padding-bottom: 6% !important;
+	font-style: normal;
 	padding-left: 1%;
 	padding-right: 1%;
+
+	text-align: center;
+}
+
+.servicios h4{
+	font-size: 18px;
 }
 
 .servicios i 
@@ -102,14 +189,21 @@ div.servicios
 	font-size: 30px;
 	padding: 15px 15px;
 	border-radius: 50px;
-	background-color: #76b71f;
-	color: white;
+	background-color: white !important;
+	color: #69db7c !important;
+
+	box-shadow: 0px 23px 30px -20px rgba(0,0,0,0.4);
+	
+	
 }
 
+button{
+	cursor: pointer;
+}
 
 /*    Clientes asociados   -------------------------------------*/
 
-.clientes
+/*.clientes
 {
 	height: 300px;
 
@@ -146,9 +240,81 @@ div.servicios
 {
 	width: 220px;
 	
+}*/
+
+.cliente{
+
+	position: relative;
+	width: 100%;
+	
+	background: url("../img/baner2.jpg") center center no-repeat;
+	background-size: cover;
 }
 
+.cliente::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/*background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);*/
+	opacity: .6;
+	background: rgba(64,192,87,1);
+	background: -moz-linear-gradient(top, rgba(64,192,87,1) 0%, rgba(145,232,66,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(64,192,87,1)), color-stop(100%, rgba(145,232,66,1)));
+	background: -webkit-linear-gradient(top, rgba(64,192,87,1) 0%, rgba(145,232,66,1) 100%);
+	background: -o-linear-gradient(top, rgba(64,192,87,1) 0%, rgba(145,232,66,1) 100%);
+	background: -ms-linear-gradient(top, rgba(64,192,87,1) 0%, rgba(145,232,66,1) 100%);
+	background: linear-gradient(to bottom, rgba(64,192,87,1) 0%, rgba(145,232,66,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40c057', endColorstr='#91e842', GradientType=0 );
+}
 
+.cliente-contenido{
+	padding-top: 3%;
+	padding-bottom: 2% !important;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+.cliente h3{
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	font-weight: 300;
+
+	z-index: 500;
+}
+
+.borde{
+	border-bottom: 1px solid #ffffff42;
+}
+
+.cliente h2{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Playfair Display', serif;
+
+}
+
+.cliente .s{
+	text-align: center;
+}
+
+.cliente img{
+	width: 100px;
+	height: 100px;
+}
+
+.blanco{
+	color: white !important;
+}
+
+.pad-mobile{
+	margin-top: 5% ;
+}
 /* Acerca del parque   ----------------------------------------*/
 
 
@@ -287,7 +453,9 @@ div.parque
 		background-color: #76b71f;
 		color: white;
 	}
-
+	.servicios h4{
+		font-size: 20px;
+	}
 	
 	/*    Clientes asociados   -------------------------------------*/
 	
@@ -330,6 +498,13 @@ div.parque
 		
 	}
 	
+	.pad-mobile{
+		margin-top: 0%;
+	}
+
+	.pad-mobile h2{
+		padding-left: 3%;
+	}
 	
 	/* Acerca del parque   ----------------------------------------*/
 	
@@ -375,7 +550,7 @@ div.parque
 	}
 }
 
-/* tablet */
+/* ///////////////////////////////////// tablet ////////////////////////////////////////// */
 @media screen and (min-width: 767px){
 	/*.header
 	{

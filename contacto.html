@@ -10,8 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
 	
 	<!-- Hojas de estilo propias    -->
 	<link rel="stylesheet" type="text/css" href="css/contacto.css">
@@ -66,58 +65,63 @@
 			<div class="row form-style justify-content-center">
 				<div class="col-lg-10 col-md-8 ">
 					<form role="form" class="flex-column flex-md-row" name="contacto" id="contacto" action="controllers/envio.php" method="post" >
-
-						<div class="form-group row">							
-							<label class="col-2 col-form-label">Nombre</label>					
-							<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+						<div class="row">
+							<h4><i class="fa fa-user-circle-o" aria-hidden="true"></i> Datos de contacto</h4>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group">							
+								<label for="name">Nombre</label>					
+								<input type="text" minlength="10" class="form-control col-10" required id="name" name="name" placeholder="Nombre Completo">	
+							</div>
+							<div class="col-sm-6 form-group">
+								<label for="email">Correo</label>
+								<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >
+							</div>
 						</div>
 
-						<div class="form-group row">
-							<label class="col-2 col-form-label">Correo</label>
-							<input type="email" minlength="8" class="form-control col-10" id="email" required name="email" placeholder="Correo Electronico" >	
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label for="tel">Telefono</label>
+								<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
+							</div>
+							<div class="col-sm-6 form-group">
+								<label for="domicilio">Domicilio</label>
+								<input type="text" minlength="8" class="form-control col-10" id="autocompletez" required name="domicilio" placeholder="Ingrese su domicilio" >
+							</div>
 						</div>
-
-						<div class="form-group row">
-							<label class="col-2 col-form-label">Telefono</label>
-							<input type="number" minlength="10" class="form-control col-10" id="tel"  required name="tel" placeholder="Numero Celular/Telefono">
+						<div class="row">
+							<h4><i class="fa fa-check-square-o" aria-hidden="true"></i> Motivo del contacto</h4>
 						</div>
-
-						<div class="form-group row">	
-							<label class="col-2 col-form-label">Domicilio</label>
-							<input type="text" minlength="8" class="form-control col-10" id="autocompletez" required name="domicilio" placeholder="Ingrese su domicilio" >
-						</div>	
-
-						<div class="control-group row">
-							<label class="col-2 col-form-label">Asunto</label>
+						<div class="row">
 								<div class="col-lg-10">
-									<label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" id="some_field"
-								          data-validation-minchecked-minchecked="1" 
-								          data-validation-minchecked-message="Seleccionar al menos 1 opcion"/>
-								    Seguro Sepelio 
-							        </label>
-									<label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Cremacion" /> Servicio Cremacion
-								    </label>
-									<label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Parcela" /> Servicio Parcela
-								    </label>
-								    <label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Traslado" /> Servicio Traslado
-								    </label>
-								    <label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Servicio Inhumacion" /> Servicio Inhumacion
-								    </label>
-								    <label class="checkbox col-5">
-								        <input type="checkbox" name="some_field" value="Otros" /> Otros
-								    </label>
-							    </div>
+										<label class="checkbox col-5">
+											<input type="checkbox" name="some_field" id="some_field"
+											  data-validation-minchecked-minchecked="1" 
+											  data-validation-minchecked-message="Seleccionar al menos 1 opcion"/>
+										Seguro Sepelio 
+										</label>
+										<label class="checkbox col-5">
+											<input type="checkbox" name="some_field" value="Servicio Cremacion" /> Servicio Cremacion
+										</label>
+										<label class="checkbox col-5">
+											<input type="checkbox" name="some_field" value="Servicio Parcela" /> Servicio Parcela
+										</label>
+										<label class="checkbox col-5">
+											<input type="checkbox" name="some_field" value="Servicio Traslado" /> Servicio Traslado
+										</label>
+										<label class="checkbox col-5">
+											<input type="checkbox" name="some_field" value="Servicio Inhumacion" /> Servicio Inhumacion
+										</label>
+										<label class="checkbox col-5">
+											<input type="checkbox" name="some_field" value="Otros" /> Otros
+										</label>
+									</div>
 						</div>
 
 						<div class="control-group">
 							<div class="form-group">
 								<textarea class="form-control" type="textarea" minlength="20" id="message" name="message" required placeholder="Mensaje..." maxlength="140" rows="7" style="resize:none"></textarea>
-								<span class="help-block"><p id="characterLeft" class="help-block ">Por favor no dude en comunicarse con nosotros</p></span>
+								
 							</div>
 						</div>
 

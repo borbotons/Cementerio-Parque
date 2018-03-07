@@ -71,7 +71,7 @@
 				<img src="img/titulo.png" alt="">
 			</div>
 			<div class="row subtitulo wow fadeInUp " data-wow-delay="0.3s">
-				<h2> <i class="fa fa-paper-plane" aria-hidden="true"></i> Solicitud de Adherencia</h2>
+				<h2> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Solicitud de Adherencia</h2>
 			</div>
 			<div class="row justify-content-center frase wow fadeInUp " data-wow-delay="0.5s">
 				<p>Por favor complete el siguiente formulario de adherencia, de esta manera se formalizar&aacute
@@ -83,27 +83,31 @@
 					<div class="row seccion">
 							<h2>1. Selecci&oacuten del Servicio</h2>
 					</div>
-					<div class="form-group row">
-					<label class="col-2 col-form-label" for="a" >Servicio</label>
-						<select name="a" class="form-control col-10" onchange="operacion()" id="a">
-									<option value="1">Plan Grupo Familiar Premium</option>
-									<option value="2">Plan Grupo Familiar Directo</option>
-									<option value="3">Plan Cementerio Parque Premiun</option>
-									<option value="4">Plan Cementerio Parque</option>
-									<option value="5">Servicio F&uacute;nebre Premium</option>
-									<option value="6">Servicio F&uacute;nebre Solo</option>
-						</select>
+					<div class="row justify-content-center">
+						<div class="col-sm-12 form-group">
+							<label for="a" >Servicio</label>
+							<select name="a" class="form-control col-10" onchange="operacion()" id="a">
+										<option value="1">Plan Grupo Familiar Premium</option>
+										<option value="2">Plan Grupo Familiar Directo</option>
+										<option value="3">Plan Cementerio Parque Premiun</option>
+										<option value="4">Plan Cementerio Parque</option>
+										<option value="5">Servicio F&uacute;nebre Premium</option>
+										<option value="6">Servicio F&uacute;nebre Solo</option>
+							</select>
+						</div>		
 					</div>
-					<div class="form-group row">
-					<label class="col-2 col-form-label">Adherentes</label>
-						<select name="b" class="form-control col-10" onchange="operacion()" id="b">
-									<option value="0">Precio Base (sin adherentes)</option>
-									<option value="1">+1 adherente</option>
-									<option value="2">+2 adherentes</option>
-									<option value="3">+3 adherentes</option>
-									<option value="4">+4 adherentes</option>
-									<option value="5">+5 adherentes</option>
-						</select>
+					<div class="row justify-content-center">
+						<div class="col-sm-12 form-group">
+							<label for="b">Adherentes</label>
+							<select name="b" class="form-control col-10" onchange="operacion()" id="b">
+										<option value="0">Precio Base (sin adherentes)</option>
+										<option value="1">+1 adherente</option>
+										<option value="2">+2 adherentes</option>
+										<option value="3">+3 adherentes</option>
+										<option value="4">+4 adherentes</option>
+										<option value="5">+5 adherentes</option>
+							</select>
+						</div>
 					</div>
 					<div class="row adherente">
 						<h6>Se entiende por Adherente a toda persona ajena al <strong>nucleo familiar primario</strong> del asociado. Ejemplo: t&iacuteos, primos, hermanos, sobrinos. </h6>
